@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Converte Imagem</title>
+    <script src="https://kit.fontawesome.com/ee9790b7c3.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    body{
+
+    height: 100%;
+    height: 100vh;
+    margin:0;
+    font-family: Arial;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    }
+    h1{
+    color: white;
+    font-size: 28px;
+    font-family: Arial;
+    text-align: center;
+    }
+    #content{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    height:60%;
+
+    border-radius: 20px;
+    background-color:orange;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    }
+    input::file-selector-button{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: normal;
+    }
+    #botao{
+    background-color: red;
+    width:150px;
+    color: white;
+    padding:5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+
+    }
+    a:link{
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+
+    }
+    #content-inner{
+    padding: 8px;
+    border: 1px  dashed white;
+    border-radius: 5px;
+    }
+    #content_list_images{
+    display:flex;
+    gap:20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding:10px;
+    margin-bottom: 20px;
+    font-size:14px;
+    }
+    .item{
+
+
+    }
+    #btn_convert{
+    background-color: red;
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    font-weight: bold;
+
+    }
+    #btn_convert a{
+    color:white;
+    }
+    #container-result{
+
+    padding:10px;
+
+    }
+    #item-result{
+    display:flex;
+    }
+
+
+</style>
+
+<body>
+
+<div id="content">
+    <div id="content-inner">
+
+
+    <h1>Escolha o arquivo para conversão -{{teste}}</h1>
+    <form action="{{url_for('upload_file')}}"   method="POST" enctype="multipart/form-data">
+
+        <input  type="file" id="file" name="file" onchange="this.form.submit()" />
+
+        <pre id="fileContent"></pre>
+        {% for image in images %}
+        <div class="item">
+        <div id="content_list_images">
+              <div  id="name_image" >{{image['filename']}}</div>
+            <select name="types" id="select" onchange="selectType(this)" >
+            <option value="webp" selected>webp</option>
+            <option value="png">png</option>
+            <option value="jpg">jpg</option>
+            <option value="gif">gif</option>
+        </select>
+        <a href="http://localhost:5000/delete?item={{image['filename']}}">
+            <div ><i class="fa-solid fa-circle-xmark" style="color: red"></i></div>
+        </a>
+        </div>
+        </div>
+
+        {% endfor %}
+
+
+
+
+
+        <div id="btn_convert">
+            <a href="http://localhost:5000/getFiles">Converter Imagens</a>
+        </div>
+
+
+    </form>
+        {% for image in images_download %}
+         {% if status==200 %}
+        <div id="container-result">
+            <div id="item-result">
+                 <div>{{image}}</div>
+        <a href="http://localhost:5000/static/{{image}}"  download="http://localhost:5000/static/{{image}}">
+            <div id="botao">
+                Donwload Image
+            </div>
+
+        </a>
+            </div>
+
+        </div>
+
+
+        {% endif %}
+         {% endfor %}
+ </div>
+</div>
+
+
+</body>
+<script>
+
+  document.getElementById("select").addEventListener("change", (e)=>
+   {
+    var file= e.target.parentElement.firstChild.nextElementSibling.innerHTML
+    fetch(`http://localhost:5000/change_types?types=${e.target.value}&file=${file}`, {method: "POST"})
+     console.log('mudei'
+)
+    }
+   )
+
+</script>
+
+
+
+
+
+
+
+
+</html>
