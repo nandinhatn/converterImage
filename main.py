@@ -150,8 +150,8 @@ def getTime():
     now = datetime.now()
 
     print(now)
-    limit = 8 * 60 * 60
-    limit = 10
+    limit = 2 * 60 * 60
+
     for re in res:
         stat_info= os.stat(f"static/{re}")
         creation_time = datetime.fromtimestamp(stat_info.st_ctime)

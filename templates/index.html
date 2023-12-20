@@ -100,6 +100,9 @@
     }
     #item-result{
     display:flex;
+    background-color: white;
+    padding:20px;
+    font-size: 12px;
     }
 
 
@@ -118,7 +121,8 @@
 
         <pre id="fileContent"></pre>
         {% for image in images %}
-        <div class="item">
+        {% if status !=200 %}
+       <div class="item">
         <div id="content_list_images">
               <div  id="name_image" >{{image['filename']}}</div>
             <select name="types" id="select" onchange="selectType(this)" >
@@ -133,15 +137,19 @@
         </div>
         </div>
 
+        {% endif %}
+
         {% endfor %}
 
 
 
 
-
-        <div id="btn_convert">
+        {% if status !=200 %}
+         <div id="btn_convert">
             <a href="http://localhost:5000/getFiles">Converter Imagens</a>
         </div>
+        {% endif %}
+
 
 
     </form>
@@ -152,7 +160,7 @@
                  <div>{{image}}</div>
         <a href="http://localhost:5000/static/{{image}}"  download="http://localhost:5000/static/{{image}}">
             <div id="botao">
-                Donwload Image
+                Donwload
             </div>
 
         </a>
