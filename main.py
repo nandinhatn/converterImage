@@ -1,4 +1,5 @@
 # This is a sample Python script.
+import pathlib
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
@@ -141,16 +142,16 @@ def getTime():
     for(dir_path, dir_names, file_names) in os.walk("static"):
             res.extend(file_names)
             print(file_names)
-    #print(res)
+
     images_in=[]
     for(dir_path, dir_names, file_names) in os.walk("images"):
         images_in.extend(file_names)
 
     now = datetime.now()
-    current_time = now.strftime("%H:%M:%S")
+
     print(now)
     limit = 8 * 60 * 60
-    limit = 5 * 60
+    limit = 10
     for re in res:
         stat_info= os.stat(f"static/{re}")
         creation_time = datetime.fromtimestamp(stat_info.st_ctime)
@@ -162,7 +163,10 @@ def getTime():
         print(limit)
         if dif.seconds > limit:
             print("passow")
-            os.unlink(f"images/{re}")
+            print("aqui ", re)
+            print(f"images/{re}")
+            os.unlink(f"static/{re}")
+
 
         for images in images_in:
             stat_info = os.stat(f"images/{images}")
@@ -172,7 +176,9 @@ def getTime():
             print(limit)
             if dif.seconds > limit:
                 print("passow")
-                os.unlink(images)
+                print(images)
+
+                os.unlink(f"images/{images}")
 
 
 
