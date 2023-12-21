@@ -67,15 +67,28 @@ def upload_file():
         print(request.files['file'])
         print(request.form.get('types'))
         types = request.form.get('types')
-
+        files = request.files.getlist("file")
+        print("teste")
+        print(files)
         f = request.files['file']
 
-        f.save(f"images/{f.filename}")
-        images.append({'filename': f.filename, 'file': f, 'types': types})
+        saveFiles(files,types)
+
+
+        #f.save(f"images/{f.filename}")
+        #images.append({'filename': f.filename, 'file': f, 'types': types})
         print(images)
 
         return render_template("index.html", images=images, up=True)
         # return convert(request.files['file'], f.filename,types)
+
+def saveFiles(arrayFotos,types):
+
+    for foto in arrayFotos:
+        foto.save(f"images/{foto.filename}")
+        images.append({'filename': foto.filename, 'file': foto,'types': types})
+        print(foto.filename)
+
 
 @app.route("/change_types", methods=["GET","POST"])
 def change_types():

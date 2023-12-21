@@ -47,7 +47,7 @@
     font-weight: normal;
     }
     #botao{
-    background-color: #064C9F;
+    background-color: #009D2E;
     width:150px;
     color: white;
     padding:5px;
@@ -56,7 +56,9 @@
     justify-content: center;
     font-weight: bold;
 
+
     }
+
     a:link{
     color: white;
     text-decoration: none;
@@ -104,19 +106,18 @@
     #container-result{
 
     padding:10px;
-    background-color: #B4BBD2;
+    background-color: white;
 
     }
     #item-result{
     display:flex;
-    background-color: white;
+
     padding:20px;
     font-size: 12px;
     border:1px solid #064C9F;
     align-items: center;
-
-
-    justify-content: space-between;
+    gap:20px;
+    justify-content: space-evenly;
     }
     #select{
     border: 1px solid #064C9F;
@@ -138,7 +139,7 @@
     <h1>Escolha o arquivo para conversão</h1>
     <form action="{{url_for('upload_file')}}"   method="POST" enctype="multipart/form-data">
 
-        <input  type="file" id="file" name="file" onchange="this.form.submit()" />
+        <input  type="file" id="file" name="file" multiple  onchange="this.form.submit()" />
 
         <pre id="fileContent"></pre>
         {% for image in images %}
@@ -181,7 +182,7 @@
                  <div>{{image}}</div>
         <a href="http://localhost:5000/static/{{image}}"  download="http://localhost:5000/static/{{image}}">
             <div id="botao">
-                Donwload
+                Imagem Pronta!!!
             </div>
 
         </a>
