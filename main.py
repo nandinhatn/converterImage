@@ -74,7 +74,7 @@ def upload_file():
         images.append({'filename': f.filename, 'file': f, 'types': types})
         print(images)
 
-        return render_template("index.html", images=images)
+        return render_template("index.html", images=images, up=True)
         # return convert(request.files['file'], f.filename,types)
 
 @app.route("/change_types", methods=["GET","POST"])
@@ -127,7 +127,7 @@ def delete_file():
         if filename['filename']== item:
            # print("delete item:")
            # print(images[i]['filename'])
-            os.unlink(images[i]['filename'])
+            os.unlink(f"images/{images[i]['filename']}")
             del images[i]
     #item = request.args.get('item')
     #images.remove(item)

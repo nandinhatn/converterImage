@@ -9,10 +9,12 @@
 </head>
 <style>
     body{
-
-    height: 100%;
     height: 100vh;
-    margin:0;
+
+    margin:0 auto;
+    align-items: center;
+    display:flex;
+    justify-content: center;
     font-family: Arial;
 
     display:flex;
@@ -20,33 +22,32 @@
     align-items: center;
     }
     h1{
-    color: white;
-    font-size: 28px;
+    color: #064C9F;
+    font-size: 25px;
     font-family: Arial;
     text-align: center;
     }
     #content{
     display:flex;
     flex-direction: column;
-    width: 50%;
-    height:60%;
+    align-items:center;
 
-    border-radius: 20px;
-    background-color:orange;
+
+
     justify-content: center;
     align-items: center;
     padding:20px;
     }
     input::file-selector-button{
-    background-color: white;
-    color: black;
+    background-color: #064C9F;
+    color: white;
     border: none;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 5px 5px 5px 5px;
     font-weight: normal;
     }
     #botao{
-    background-color: red;
+    background-color: #064C9F;
     width:150px;
     color: white;
     padding:5px;
@@ -64,25 +65,32 @@
     }
     #content-inner{
     padding: 8px;
-    border: 1px  dashed white;
+    border: 1px  dashed blue;
     border-radius: 5px;
+    padding:20px;
+
+    border-radius: 20px;
+    background-color: white;
+
     }
     #content_list_images{
     display:flex;
-    gap:20px;
+    gap:40px;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     padding:10px;
     margin-bottom: 20px;
     font-size:14px;
+    border: 1px solid #064C9F;
+    border-radius: 10px;
     }
     .item{
 
 
     }
     #btn_convert{
-    background-color: red;
+    background-color: #064C9F;
     padding:20px;
     border-radius:10px;
     display:flex;
@@ -96,6 +104,7 @@
     #container-result{
 
     padding:10px;
+    background-color: #B4BBD2;
 
     }
     #item-result{
@@ -103,6 +112,18 @@
     background-color: white;
     padding:20px;
     font-size: 12px;
+    border:1px solid #064C9F;
+    align-items: center;
+
+
+    justify-content: space-between;
+    }
+    #select{
+    border: 1px solid #064C9F;
+    border-radius: 5px;
+    background-color: #B4BBD2;
+    color: #064C9F;
+    font-size: 16px;
     }
 
 
@@ -114,7 +135,7 @@
     <div id="content-inner">
 
 
-    <h1>Escolha o arquivo para conversão -{{teste}}</h1>
+    <h1>Escolha o arquivo para conversão</h1>
     <form action="{{url_for('upload_file')}}"   method="POST" enctype="multipart/form-data">
 
         <input  type="file" id="file" name="file" onchange="this.form.submit()" />
@@ -132,7 +153,7 @@
             <option value="gif">gif</option>
         </select>
         <a href="http://localhost:5000/delete?item={{image['filename']}}">
-            <div ><i class="fa-solid fa-circle-xmark" style="color: red"></i></div>
+            <div ><i class="fa-solid fa-circle-xmark" style="color: #D33502; font-size: 25px;"></i></div>
         </a>
         </div>
         </div>
@@ -144,7 +165,7 @@
 
 
 
-        {% if status !=200 %}
+        {% if status !=200 and up==True%}
          <div id="btn_convert">
             <a href="http://localhost:5000/getFiles">Converter Imagens</a>
         </div>
