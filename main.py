@@ -7,12 +7,20 @@ import pathlib
 from flask import Flask, jsonify, request, json, render_template, send_from_directory
 from flask_cors import CORS
 from pathlib import Path
-from PIL import Image
+from PIL import Image, ImageFilter
+import rembg
+import numpy as np
 import os
+
+import pillow_avif
+
+
 import time
 from datetime import datetime
-
+from tqdm import tqdm
+from time import sleep
 app = Flask(__name__)
+application = app
 CORS(app)
 images = []
 images_download=[]
@@ -21,6 +29,10 @@ images_download=[]
 def hello():
     return render_template('index.html', images=images)
 
+@app.route('/favicon')
+def favicon():
+
+    return render_template('favicon.html')
 
 @app.route('/static/<path:path>')
 def serve_static(path):
@@ -38,6 +50,14 @@ def print_hi():
 def convert(path, filename, types):
     print(path)
     im = Image.open(f"images/{filename}").convert("RGB")
+    #bw = im.convert('L')
+    #bw.show()
+    #im1 = im.filter(ImageFilter.GaussianBlur)
+    #im1.show()
+    input_array = np.array(im)
+    output_array = rembg.remove(input_array)
+    output_image = Image.fromarray(output_array)
+    output_image.show()
     print(types)
     if types == None:
         types = 'webp'
@@ -114,12 +134,16 @@ def change_types():
 
 @app.route("/getFiles", methods=["POST", "GET"])
 def getFiles():
-    for image in images:
+    pbar = tqdm(images)
+    for image in pbar:
         # convert(image['file'], image['filename'],'webp')
         #print(image['file'])
         #print(image['filename'])
         convert(image['file'], image['filename'], image['types'])
         # convert(image,image.filename,'webp')
+        pbar.set_description("Processing %s" % image)
+        status = pbar.set_description("Processing %s" % image)
+        print(status)
 
     # return convert(request.files['file'], f.filename,types)
     return render_template("index.html", images=images, status=200, images_download=images_download)
@@ -201,9 +225,16 @@ def getTime():
         #print(re)
 
 
+def teste():
+    pbar = tqdm(["a", "b", "c", "d"])
+    for char in pbar:
+        sleep(0.25)
+        pbar.set_description("Processing %s" % char)
+
 
 if __name__ == '__main__':
-    getTime()
+    #getTime()
+
     app.run(debug=True)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

@@ -1,0 +1,5 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/poppymidiacom/public_html/convert_image"
+PassengerBaseURI "/convert_image"
+PassengerPython "/home/poppymidiacom/virtualenv/public_html/convert_image/3.9/bin/python"
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
