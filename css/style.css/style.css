@@ -1,0 +1,141 @@
+ body{
+    height: 100vh;
+
+    margin:0 auto;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    font-family: Arial;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    }
+    h1{
+    color: #064C9F;
+    font-size:20px;
+
+    font-family: Arial;
+    text-align: center;
+    line-break : auto;
+    word-break: break-word;
+    }
+
+    #content{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    flex-wrap: wrap;
+
+
+
+    justify-content: center;
+    align-items: center;
+
+    }
+    input[type="file"] {
+    display: none;
+}
+label {
+    padding: 20px 10px;
+    text-align:center;
+
+    background-color: #064C9F;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+    input::file-selector-button{
+    background-color: #064C9F;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: normal;
+    }
+    #botao{
+    background-color: #009D2E;
+    width:150px;
+    color: white;
+    padding:5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+
+
+    }
+
+    a:link{
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+
+    }
+    #content-inner{
+    padding: 8px;
+    border: 1px  dashed blue;
+    border-radius: 5px;
+    padding:20px;
+     width:80vw;
+
+
+    border-radius: 20px;
+    background-color: white;
+
+    }
+    #content_list_images{
+    display:flex;
+    gap:40px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding:10px;
+    margin-bottom: 20px;
+    font-size:14px;
+    border: 1px solid #064C9F;
+    border-radius: 10px;
+    }
+    .item{
+
+
+    }
+    #btn_convert{
+    background-color: #064C9F;
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    font-weight: bold;
+
+    }
+    #btn_convert a{
+    color:white;
+    }
+    #container-result{
+
+    padding:10px;
+    background-color: white;
+
+    }
+    #item-result{
+    display:flex;
+
+    padding:20px;
+    font-size: 12px;
+    border:1px solid #064C9F;
+    align-items: center;
+    gap:20px;
+    justify-content: space-evenly;
+    }
+    #select{
+    border: 1px solid #064C9F;
+    border-radius: 5px;
+    background-color: #B4BBD2;
+    color: #064C9F;
+    font-size: 16px;
+    }
