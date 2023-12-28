@@ -1,6 +1,12 @@
 Flask==3.0.0
 Flask-Cors==4.0.0
-pathlib==1.0.1
+lazy_loader==0.3
+numba==0.58.1
+numpy==1.26.2
+opencv-python-headless==4.8.1.78
+packaging==23.2
 Pillow==10.1.0
+pillow-avif-plugin==1.4.1
+rembg==2.0.53
 tqdm==4.66.1
-Werkzeug==3.0.1
+

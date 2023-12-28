@@ -29,14 +29,14 @@ images_download=[]
 def hello():
     return render_template('index.html', images=images)
 
-@app.route('/favicon')
+@app.route('/removeBackground')
 def favicon():
 
-    return render_template('favicon.html')
+    return render_template('removeBackground.html')
 
-@app.route('/static/<path:path>')
+@app.route('/static/images/<path:path>')
 def serve_static(path):
-    return send_from_directory('static', path)
+    return send_from_directory('static/images', path)
 
 
 @app.route("/image", methods=['GET', 'POST'])
@@ -46,6 +46,22 @@ def print_hi():
         email='fernanda@poppt'
     )
 
+def removeBg(path, filename,types):
+    print(path)
+    im = Image.open(f'images/{filename}').convert('RGB')
+    input_array = np.array(im)
+    output_array = rembg.remove(input_array)
+    output_image = Image.fromarray(output_array)
+    output_image.show()
+    name = filename.split('.')[0]
+    print(name)
+    #name = filename.replace(im.format,'')
+    output_image.save(f"static/images/{name}.png")
+    print(output_image)
+    images_download.append(f"{name}.png")
+    #im.save(f"static/images/{filename}.{types}", f"{types}", quality=55)
+    return render_template("index.html", status=200, path=path, images_donwload=images_download)
+
 
 def convert(path, filename, types):
     print(path)
@@ -54,10 +70,7 @@ def convert(path, filename, types):
     #bw.show()
     #im1 = im.filter(ImageFilter.GaussianBlur)
     #im1.show()
-    input_array = np.array(im)
-    output_array = rembg.remove(input_array)
-    output_image = Image.fromarray(output_array)
-    output_image.show()
+  
     print(types)
     if types == None:
         types = 'webp'
@@ -69,7 +82,7 @@ def convert(path, filename, types):
     # ****TROCAR O TYPES ******
     # path = f"{filename}.{types}"
     # im.save(f'C:/Users/Fernanda/Documents/convertImage/images/{path}', 'webp', quality=55)
-    im.save(f"static/{name}.{types}", f"{types}", quality=55)
+    im.save(f"static/images/{name}.{types}", f"{types}", quality=55)
     # im.save(f"static/{name}.{types}", f"{types}", quality=55)
     # return jsonify({'status': 200, 'path': path})
     images_download.append(f"{name}.{types}")
@@ -78,17 +91,37 @@ def convert(path, filename, types):
 
 
 
+@app.route("/upload_remove", methods=["POST", ])
+def upload_file_removeBackground():
+    if request.method == 'POST':
+        print(request.files['file'])
+        print(request.form.get('types'))
+        types = request.form.get('types')
+        files = request.files.getlist("file")
+       
+        print(files)
+        f = request.files['file']
+
+        saveFiles(files,types)
+
+
+        #f.save(f"images/{f.filename}")
+        #images.append({'filename': f.filename, 'file': f, 'types': types})
+        print(images)
+
+        return render_template("removeBackground.html", images=images, up=True)
+        # return convert(request.files['file'], f.filename,types)
 
 
 
-@app.route("/upload", methods=["POST"])
+@app.route("/upload", methods=["POST", ])
 def upload_file():
     if request.method == 'POST':
         print(request.files['file'])
         print(request.form.get('types'))
         types = request.form.get('types')
         files = request.files.getlist("file")
-        print("teste")
+       
         print(files)
         f = request.files['file']
 
@@ -135,15 +168,25 @@ def change_types():
 @app.route("/getFiles", methods=["POST", "GET"])
 def getFiles():
     pbar = tqdm(images)
+    action = request.args.get('action')
+   
+
+    print(action)
     for image in pbar:
         # convert(image['file'], image['filename'],'webp')
         #print(image['file'])
         #print(image['filename'])
-        convert(image['file'], image['filename'], image['types'])
+         if action=='remBG':
+            print(action)
+            removeBg(image['file'], image['filename'], image['types'])
+            return render_template("removeBackground.html", images=images, status=200, images_download=images_download)
+         else:
+            convert(image['file'], image['filename'], image['types'])
+            return render_template("index.html", images=images, status=200, images_download=images_download)
         # convert(image,image.filename,'webp')
-        pbar.set_description("Processing %s" % image)
-        status = pbar.set_description("Processing %s" % image)
-        print(status)
+        #pbar.set_description("Processing %s" % image)
+        #status = pbar.set_description("Processing %s" % image)
+        #print(status)
 
     # return convert(request.files['file'], f.filename,types)
     return render_template("index.html", images=images, status=200, images_download=images_download)
@@ -174,9 +217,9 @@ def delete_file():
     return render_template('index.html', images=images)
 
 def getTime():
-    print(os.walk("/static"))
+    print(os.walk("/static/images"))
     res=[]
-    for(dir_path, dir_names, file_names) in os.walk("static"):
+    for(dir_path, dir_names, file_names) in os.walk("static/images"):
             res.extend(file_names)
             print(file_names)
 
@@ -190,7 +233,7 @@ def getTime():
     limit = 2 * 60 * 60
 
     for re in res:
-        stat_info= os.stat(f"static/{re}")
+        stat_info= os.stat(f"static/images/{re}")
         creation_time = datetime.fromtimestamp(stat_info.st_ctime)
 
 
@@ -201,8 +244,8 @@ def getTime():
         if dif.seconds > limit:
             print("passow")
             print("aqui ", re)
-            print(f"images/{re}")
-            os.unlink(f"static/{re}")
+            print(f"images/images/{re}")
+            os.unlink(f"static/images/{re}")
 
 
         for images in images_in:

@@ -18,13 +18,10 @@
 
 <body>
     <header>
-        <img src="/static/css/img/logo_convert.png">
        
         <nav>
             <ul>
-                <li> <a href="http://convertimageio.tech/" imagens>Converter images</a></li>
-               <!--  <li> <a href="http://localhost:5000/" imagens>Converter images</a></li> -->
-              <!--   <li> <a href="http://localhost:5000/removeBackground">Remove Background</a> </li> -->
+                <li> <a href="http://convertimageio.tech" imagens>Converter images</a></li>
                 <li> <a href="http://convertimageio.tech/removeBackground">Remove Background</a> </li>
                 <li>Mudar Cor da Imagem</li>
             </ul>
@@ -33,12 +30,14 @@
     </header>
 
 <div id="content">
-    <h1>Converter imagens  jpg para diversas extensões</h1>
+    <h1>Remova facilmente background das imagens</h1>
     <div id="content-inner">
 
-    <h2>Escolha o arquivo para conversão</h2>
 
-    <form action="{{url_for('upload_file')}}"   method="POST" enctype="multipart/form-data">
+   
+        <h2>Escolha o arquivo para remover o background</h2>
+
+    <form action="{{url_for('upload_file_removeBackground')}}"   method="POST" enctype="multipart/form-data">
   <label for="file">Enviar arquivo</label>
         <input  type="file" id="file" name="file" multiple  onchange="this.form.submit()" />
 
@@ -48,7 +47,7 @@
        <div class="item">
         <div id="content_list_images">
               <div  id="name_image" >{{image['filename']}}</div>
-            <select name="types" id="select" onchange="selectType(this)" >
+          <!--   <select name="types" id="select" onchange="selectType(this)" >
             <option value="avif">avif</option>
 
             <option value="webp" selected>webp</option>
@@ -57,7 +56,7 @@
             <option value="jpg">jpg</option>
             <option value="gif">gif</option>
             <option value="tiff">tiff</option>
-        </select>
+        </select> -->
         <a href="http://convertimageio.tech/delete?item={{image['filename']}}">
             <div ><i class="fa-solid fa-circle-xmark" style="color: #D33502; font-size: 25px;"></i></div>
         </a>
@@ -72,10 +71,10 @@
 
 
         {% if status !=200 and up==True%}
-         <div id="btn_convert">
-            <a href="http://convertimageio.tech/getFiles?action=convert">Converter Imagens</a>
-        </div>
         
+        <div id="btn_convert">
+            <a href="http://localhost:5000/getFiles?action=remBG">Remover Background</a>
+        </div>
         {% endif %}
 
 
@@ -86,7 +85,7 @@
         <div id="container-result">
             <div id="item-result">
                  <div>{{image}}</div>
-        <a href="/static/images/{{image}}"  download="foto">
+        <a href="http://localhost:5000/static/images/{{image}}"  download="http://localhost:5000/static/{{image}}">
             <div id="botao">
                 Imagem Pronta!!!
             </div>
@@ -109,7 +108,7 @@
   document.getElementById("select").addEventListener("change", (e)=>
    {
     var file= e.target.parentElement.firstChild.nextElementSibling.innerHTML
-    fetch(`http://convertimageio.tech/change_types?types=${e.target.value}&file=${file}`, {method: "POST"})
+    fetch(`http://localhost:5000/change_types?types=${e.target.value}&file=${file}`, {method: "POST"})
      console.log('mudei'
 )
     }
