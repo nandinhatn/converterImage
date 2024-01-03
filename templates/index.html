@@ -17,20 +17,10 @@
 </style>
 
 <body>
-    <header>
-        <img src="/static/css/img/logo_convert.png">
-       
-        <nav>
-            <ul>
-                <li> <a href="http://convertimageio.tech/" imagens>Converter images</a></li>
-               <!--  <li> <a href="http://localhost:5000/" imagens>Converter images</a></li> -->
-              <!--   <li> <a href="http://localhost:5000/removeBackground">Remove Background</a> </li> -->
-                <li> <a href="http://convertimageio.tech/removeBackground">Remove Background</a> </li>
-                <li>Mudar Cor da Imagem</li>
-            </ul>
-        
-        </nav>
-    </header>
+    {% include 'topo.html' %}
+   
+    
+ 
 
 <div id="content">
     <h1>Converter imagens  jpg para diversas extensões</h1>
@@ -58,7 +48,7 @@
             <option value="gif">gif</option>
             <option value="tiff">tiff</option>
         </select>
-        <a href="http://convertimageio.tech/delete?item={{image['filename']}}">
+        <a href="/delete?item={{image['filename']}}">
             <div ><i class="fa-solid fa-circle-xmark" style="color: #D33502; font-size: 25px;"></i></div>
         </a>
         </div>
@@ -73,7 +63,7 @@
 
         {% if status !=200 and up==True%}
          <div id="btn_convert">
-            <a href="http://convertimageio.tech/getFiles?action=convert">Converter Imagens</a>
+            <a href="/getFiles?action=convert">Converter Imagens</a>
         </div>
         
         {% endif %}
@@ -83,10 +73,11 @@
     </form>
         {% for image in images_download %}
          {% if status==200 %}
+       
         <div id="container-result">
             <div id="item-result">
                  <div>{{image}}</div>
-        <a href="/static/images/{{image}}"  download="foto">
+        <a href="/static/images/{{ip}}/{{image}}"  download="foto">
             <div id="botao">
                 Imagem Pronta!!!
             </div>
@@ -109,7 +100,7 @@
   document.getElementById("select").addEventListener("change", (e)=>
    {
     var file= e.target.parentElement.firstChild.nextElementSibling.innerHTML
-    fetch(`http://convertimageio.tech/change_types?types=${e.target.value}&file=${file}`, {method: "POST"})
+    fetch(`/change_types?types=${e.target.value}&file=${file}`, {method: "POST"})
      console.log('mudei'
 )
     }

@@ -17,17 +17,7 @@
 </style>
 
 <body>
-    <header>
-       
-        <nav>
-            <ul>
-                <li> <a href="http://convertimageio.tech" imagens>Converter images</a></li>
-                <li> <a href="http://convertimageio.tech/removeBackground">Remove Background</a> </li>
-                <li>Mudar Cor da Imagem</li>
-            </ul>
-        
-        </nav>
-    </header>
+    {% include 'topo.html' %}
 
 <div id="content">
     <h1>Remova facilmente background das imagens</h1>
@@ -57,7 +47,7 @@
             <option value="gif">gif</option>
             <option value="tiff">tiff</option>
         </select> -->
-        <a href="http://convertimageio.tech/delete?item={{image['filename']}}">
+        <a href="/delete?item={{image['filename']}}">
             <div ><i class="fa-solid fa-circle-xmark" style="color: #D33502; font-size: 25px;"></i></div>
         </a>
         </div>
@@ -73,7 +63,7 @@
         {% if status !=200 and up==True%}
         
         <div id="btn_convert">
-            <a href="http://localhost:5000/getFiles?action=remBG">Remover Background</a>
+            <a href="/getFiles?action=remBG">Remover Background</a>
         </div>
         {% endif %}
 
@@ -85,7 +75,7 @@
         <div id="container-result">
             <div id="item-result">
                  <div>{{image}}</div>
-        <a href="http://localhost:5000/static/images/{{image}}"  download="http://localhost:5000/static/{{image}}">
+        <a href="http://localhost:5000/static/images/{{ip}}/{{image}}"  download="http://localhost:5000/static/{{ip}}/{{image}}">
             <div id="botao">
                 Imagem Pronta!!!
             </div>
