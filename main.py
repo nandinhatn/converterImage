@@ -5,7 +5,7 @@ import pathlib
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-from flask import Flask, jsonify, request, json, render_template, send_from_directory
+from flask import Flask, jsonify, redirect, request, json, flash, render_template, send_from_directory, url_for
 from flask_cors import CORS
 from pathlib import Path
 from PIL import Image, ImageFilter
@@ -22,8 +22,10 @@ import time
 from datetime import datetime
 from tqdm import tqdm
 from time import sleep
+
 app = Flask(__name__)
 application = app
+app.config['SECRET_KEY']  = 'MINHA-PALAVRA-SECRETA'
 CORS(app)
 images = []
 images_download=[]
@@ -47,6 +49,7 @@ def hello():
    
    
     return render_template('index.html', images=images)
+
 
 @app.route('/removeBackground')
 def favicon():
@@ -142,7 +145,7 @@ def upload_file_removeBackground():
 
 @app.route("/upload", methods=["POST", ])
 def upload_file():
-  
+    #flash("Dados carregando")
     images_download.clear()
     if request.method == 'POST':
         
@@ -235,6 +238,7 @@ def getFiles():
 
 # Press the green button in the gutter to run the script.
 
+
 @app.route('/delete', methods=['GET'])
 def delete_file():
 
@@ -263,7 +267,9 @@ def getTime():
    
     res=[]
     images_in=[]
-    for(dir_path, dir_names, file_names) in os.walk(f"static/images"):
+    res.clear()
+    images_in.clear()
+    for(dir_path, dir_names, file_names) in os.walk(f"images"):
            #res.extend(dir_path)
            print('aqui')
           
@@ -289,20 +295,19 @@ def getTime():
               print(images_in)
 
               for image in images_in:
-                  #print(image)
+                 
                   stat_info = os.stat(dir_path).st_mtime
-                  #print(stat_info)
+                 
                   creation_time = datetime.fromtimestamp(stat_info)
-                  #print(creation_time)
+                 
                   dif = now - creation_time
                   print(dif.seconds)
                   if dif.seconds > 100:
                       print('passou do tempo')
-                      #os.unlink(image)
-                      #os.remove(dir_path)
+                      
                       print(dir_path)
                       print(f"\{dir_path}/{image}")
-                      os.unlink(f"{dir_path}/{image}")
+                      #os.unlink(f"{dir_path}/{image}")
                      #os.unlink(f"/images/179.215.120.204/Becksaerea0000.jpg")
                      
                       
@@ -310,11 +315,11 @@ def getTime():
                       #os.unlink(f"images/179.215.120.204/968a82af-cf77-4b62-b01f-2912c7ef0612.jpeg")
     
     for(dir_path, dir_names, file_names) in os.walk("static/images"):
-        print(dir_path)
+       
         res.extend(file_names)
-        print(res)
+       
         for re in res:
-            print(re)
+          
             stat_info = os.stat(dir_path).st_mtime
             creation_time =datetime.fromtimestamp(stat_info)
             dif = now -creation_time
@@ -322,6 +327,7 @@ def getTime():
             if dif.seconds >100:
                 print('passou  tempo do static')
                 print(dir_path)
+                print(f"{dir_path}/{re}")
                 os.unlink(f"{dir_path}/{re}")
 
       
@@ -331,7 +337,8 @@ def getTime():
 if __name__ == '__main__':
     getTime()
     getIp()
-
+    
     app.run(debug=True)
+   
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

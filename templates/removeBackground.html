@@ -29,9 +29,12 @@
 
     <form action="{{url_for('upload_file_removeBackground')}}"   method="POST" enctype="multipart/form-data">
   <label for="file">Enviar arquivo</label>
-        <input  type="file" id="file" name="file" multiple  onchange="this.form.submit()" />
+        <input  type="file" id="file" name="file" multiple  onchange="this.form.submit(); exibLoader('loader')" />
 
         <pre id="fileContent"></pre>
+        <div id="content_loader">
+            <span id="loader" class="loader"></span>
+           </div>
         {% for image in images %}
         {% if status !=200 %}
        <div class="item">
@@ -58,18 +61,26 @@
         {% endfor %}
 
 
-
+       <!--  <div id="content_loader">
+            <span id="loader_convert" class="loader"></span>
+           </div> -->
 
         {% if status !=200 and up==True%}
         
         <div id="btn_convert">
-            <a href="/getFiles?action=remBG">Remover Background</a>
+            <a id="a_convert" onclick="exibLoader('loader_convert')" href="/getFiles?action=remBG">Remover Background</a>
+            <div id="msg_loader"></div>
         </div>
         {% endif %}
 
 
 
     </form>
+
+    <div id="content_loader">
+        <span id="loader_convert" class="loader"></span>
+       </div>
+
         {% for image in images_download %}
          {% if status==200 %}
         <div id="container-result">
@@ -93,17 +104,7 @@
 
 
 </body>
-<script>
-
-  document.getElementById("select").addEventListener("change", (e)=>
-   {
-    var file= e.target.parentElement.firstChild.nextElementSibling.innerHTML
-    fetch(`http://localhost:5000/change_types?types=${e.target.value}&file=${file}`, {method: "POST"})
-     console.log('mudei'
-)
-    }
-   )
-
+<script src="/static/js/scripts.js">
 </script>
 
 
