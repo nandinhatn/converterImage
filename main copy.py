@@ -1,4 +1,3 @@
-
 # This is a sample Python script.
 import pathlib
 import socket
@@ -332,8 +331,7 @@ def getTime():
 
 
 if __name__ == '__main__':
-    getTime()
-    getIp()   
+   
     app.run(debug=True)
    
 

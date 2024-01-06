@@ -1,5 +1,9 @@
 # DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
-PassengerAppRoot "/home/poppymidiacom/public_html/convert_image"
-PassengerBaseURI "/convert_image"
-PassengerPython "/home/poppymidiacom/virtualenv/public_html/convert_image/3.9/bin/python"
+PassengerAppRoot "/home/convertimageio/public_html/app"
+PassengerBaseURI "/"
+PassengerPython "/home/convertimageio/virtualenv/public_html/app/3.9/bin/python"
 # DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
