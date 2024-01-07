@@ -6,7 +6,10 @@
     <title>Converte Imagem</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
     <script src="https://kit.fontawesome.com/ee9790b7c3.js" crossorigin="anonymous"></script>
-   
+    <script src="/static/js/getip.js"></script>
+    <script>
+       
+    </script>
 
 </head>
 <style>
@@ -29,7 +32,7 @@
     {% endif %}
 
 <div id="content">
-    <h1>Converter imagens  jpg para diversas extensões</h1>
+    <h1>Converter imagens  jpg para diversas extensões </h1>
     <div id="content-inner">
 
     <h2>Escolha o arquivo para conversão</h2>
@@ -37,7 +40,7 @@
     <form action="{{url_for('upload_file')}}"  id="form"  method="POST" enctype="multipart/form-data">
   <label for="file">Enviar arquivo</label>
         <input  type="file" id="file" name="file"  multiple  onchange="this.form.submit(); exibLoader('loader')" />
-
+        <input type="text" id="ip" name="ip" value="ip">
         <pre id="fileContent"></pre>
         {% for image in images %}
         {% if status !=200 %}
@@ -92,6 +95,7 @@
         <div id="container-result">
             <div id="item-result">
                  <div>{{image}}</div>
+                 <div>ip:{{ip}}</div>
         <a href="/static/images/{{ip}}/{{image}}"  download="foto">
             <div id="botao">
                 Imagem Pronta!!!

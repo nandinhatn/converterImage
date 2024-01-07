@@ -3,7 +3,7 @@
 import pathlib
 import socket
 
-from flask import Flask, jsonify, redirect, request, json, flash, render_template, send_from_directory, url_for
+from flask import Flask, jsonify, redirect, request, json, flash, jsonify, render_template, send_from_directory, url_for
 from flask_cors import CORS
 from pathlib import Path
 from PIL import Image, ImageFilter
@@ -19,19 +19,24 @@ import time
 from datetime import datetime
 from tqdm import tqdm
 from time import sleep
-
+from localStoragePy import localStoragePy
 app = Flask(__name__)
 application = app
 app.config['SECRET_KEY']  = 'MINHA-PALAVRA-SECRETA'
 CORS(app)
 images = []
 images_download=[]
+ipClient = {ip: ''}
+
+
+
 
 
 
 def getIp ():
    ip = get('https://api.ipify.org').text
   
+   
    return ip
     
 
@@ -149,11 +154,14 @@ def upload_file():
        
         types = request.form.get('types')
         files = request.files.getlist("file")
+        ipForm = request.form.get('ip')
+        ipClient['ip'] = ipForm
+        print("adadadasdasdas", ipClient)
         
        
         f = request.files['file']
         
-        saveFiles(files,types)
+        saveFiles(files,types,ipForm)
 
 
        
@@ -164,16 +172,16 @@ def upload_file():
 
 
 
-def saveFiles(arrayFotos,types):
+def saveFiles(arrayFotos,types,ip):
 
    
-    path=Path(f'images/{getIp()}').mkdir(parents=True, exist_ok=True)
+    path=Path(f'images/{ip}').mkdir(parents=True, exist_ok=True)
     
     
    
 
     for foto in arrayFotos:
-        foto.save(f"images/{getIp()}/{foto.filename}")     
+        foto.save(f"images/{ip}/{foto.filename}")     
         images.append({'filename': foto.filename, 'file': foto,'types': types})
         
 
@@ -203,8 +211,8 @@ def change_types():
 def getFiles():
    
     action = request.args.get('action')
-   
-
+    
+    print("adadadasdasdas", ipClient)
     print(len(images))
 
   
@@ -230,7 +238,8 @@ def getFiles():
         #print(status)
 
     # return convert(request.files['file'], f.filename,types)
-    return render_template("index.html", images=images, status=200, images_download=images_download)
+          
+    return render_template("index.html", images=images, status=200, ip=ipClient['ip'], images_download=images_download)
 
 
 # Press the green button in the gutter to run the script.
@@ -333,7 +342,7 @@ def getTime():
 
 if __name__ == '__main__':
     getTime()
-    getIp()   
+    #getIp()   
     app.run(debug=True)
    
 
