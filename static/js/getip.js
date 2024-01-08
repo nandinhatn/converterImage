@@ -3,10 +3,14 @@ function getIPFromAmazon() {
     {localStorage.setItem('ip', JSON.parse(data).ip)
 
     document.getElementById('ip').value = localStorage.getItem('ip')
+   
 })
     
   }
   
   getIPFromAmazon()
+
+
+
 
  

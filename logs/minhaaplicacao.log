@@ -1,0 +1,725 @@
+2024-01-08 15:23:43,922 :: INFO :: 29 ::  monitora array images []
+2024-01-08 15:23:49,937 :: INFO :: 178 :: Add array images [{'filename': '20-107---loungeb.jpg', 'file': <FileStorage: '20-107---loungeb.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:23:49,937 :: INFO :: 179 :: For save complete [{'filename': '20-107---loungeb.jpg', 'file': <FileStorage: '20-107---loungeb.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:23:54,052 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:23:54,052 :: INFO :: 212 :: Checa imagens []
+2024-01-08 15:23:54,052 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [] - []
+2024-01-08 15:23:59,564 :: INFO :: 178 :: Add array images [{'filename': 'a7eaf121-6b98-4c07-a292-473e2600b0f1.jpeg', 'file': <FileStorage: 'a7eaf121-6b98-4c07-a292-473e2600b0f1.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:23:59,564 :: INFO :: 179 :: For save complete [{'filename': 'a7eaf121-6b98-4c07-a292-473e2600b0f1.jpeg', 'file': <FileStorage: 'a7eaf121-6b98-4c07-a292-473e2600b0f1.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:01,028 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:24:01,028 :: INFO :: 212 :: Checa imagens [{'filename': 'a7eaf121-6b98-4c07-a292-473e2600b0f1.jpeg', 'file': <FileStorage: 'a7eaf121-6b98-4c07-a292-473e2600b0f1.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:01,038 :: DEBUG :: 360 :: Importing BlpImagePlugin
+2024-01-08 15:24:01,038 :: DEBUG :: 360 :: Importing BmpImagePlugin
+2024-01-08 15:24:01,038 :: DEBUG :: 360 :: Importing BufrStubImagePlugin
+2024-01-08 15:24:01,039 :: DEBUG :: 360 :: Importing CurImagePlugin
+2024-01-08 15:24:01,039 :: DEBUG :: 360 :: Importing DcxImagePlugin
+2024-01-08 15:24:01,039 :: DEBUG :: 360 :: Importing DdsImagePlugin
+2024-01-08 15:24:01,039 :: DEBUG :: 360 :: Importing EpsImagePlugin
+2024-01-08 15:24:01,040 :: DEBUG :: 360 :: Importing FitsImagePlugin
+2024-01-08 15:24:01,040 :: DEBUG :: 360 :: Importing FliImagePlugin
+2024-01-08 15:24:01,040 :: DEBUG :: 360 :: Importing FpxImagePlugin
+2024-01-08 15:24:01,040 :: DEBUG :: 360 :: Importing FtexImagePlugin
+2024-01-08 15:24:01,041 :: DEBUG :: 360 :: Importing GbrImagePlugin
+2024-01-08 15:24:01,041 :: DEBUG :: 360 :: Importing GifImagePlugin
+2024-01-08 15:24:01,041 :: DEBUG :: 360 :: Importing GribStubImagePlugin
+2024-01-08 15:24:01,041 :: DEBUG :: 360 :: Importing Hdf5StubImagePlugin
+2024-01-08 15:24:01,041 :: DEBUG :: 360 :: Importing IcnsImagePlugin
+2024-01-08 15:24:01,042 :: DEBUG :: 360 :: Importing IcoImagePlugin
+2024-01-08 15:24:01,042 :: DEBUG :: 360 :: Importing ImImagePlugin
+2024-01-08 15:24:01,043 :: DEBUG :: 360 :: Importing ImtImagePlugin
+2024-01-08 15:24:01,043 :: DEBUG :: 360 :: Importing IptcImagePlugin
+2024-01-08 15:24:01,043 :: DEBUG :: 360 :: Importing JpegImagePlugin
+2024-01-08 15:24:01,043 :: DEBUG :: 360 :: Importing Jpeg2KImagePlugin
+2024-01-08 15:24:01,043 :: DEBUG :: 360 :: Importing McIdasImagePlugin
+2024-01-08 15:24:01,043 :: DEBUG :: 360 :: Importing MicImagePlugin
+2024-01-08 15:24:01,044 :: DEBUG :: 360 :: Importing MpegImagePlugin
+2024-01-08 15:24:01,045 :: DEBUG :: 360 :: Importing MpoImagePlugin
+2024-01-08 15:24:01,045 :: DEBUG :: 360 :: Importing MspImagePlugin
+2024-01-08 15:24:01,045 :: DEBUG :: 360 :: Importing PalmImagePlugin
+2024-01-08 15:24:01,045 :: DEBUG :: 360 :: Importing PcdImagePlugin
+2024-01-08 15:24:01,046 :: DEBUG :: 360 :: Importing PcxImagePlugin
+2024-01-08 15:24:01,046 :: DEBUG :: 360 :: Importing PdfImagePlugin
+2024-01-08 15:24:01,050 :: DEBUG :: 360 :: Importing PixarImagePlugin
+2024-01-08 15:24:01,050 :: DEBUG :: 360 :: Importing PngImagePlugin
+2024-01-08 15:24:01,050 :: DEBUG :: 360 :: Importing PpmImagePlugin
+2024-01-08 15:24:01,050 :: DEBUG :: 360 :: Importing PsdImagePlugin
+2024-01-08 15:24:01,050 :: DEBUG :: 360 :: Importing QoiImagePlugin
+2024-01-08 15:24:01,050 :: DEBUG :: 360 :: Importing SgiImagePlugin
+2024-01-08 15:24:01,050 :: DEBUG :: 360 :: Importing SpiderImagePlugin
+2024-01-08 15:24:01,051 :: DEBUG :: 360 :: Importing SunImagePlugin
+2024-01-08 15:24:01,051 :: DEBUG :: 360 :: Importing TgaImagePlugin
+2024-01-08 15:24:01,051 :: DEBUG :: 360 :: Importing TiffImagePlugin
+2024-01-08 15:24:01,051 :: DEBUG :: 360 :: Importing WebPImagePlugin
+2024-01-08 15:24:01,052 :: DEBUG :: 360 :: Importing WmfImagePlugin
+2024-01-08 15:24:01,052 :: DEBUG :: 360 :: Importing XbmImagePlugin
+2024-01-08 15:24:01,052 :: DEBUG :: 360 :: Importing XpmImagePlugin
+2024-01-08 15:24:01,053 :: DEBUG :: 360 :: Importing XVThumbImagePlugin
+2024-01-08 15:24:01,106 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [{'filename': 'a7eaf121-6b98-4c07-a292-473e2600b0f1.jpeg', 'file': <FileStorage: 'a7eaf121-6b98-4c07-a292-473e2600b0f1.jpeg' ('image/jpeg')>, 'types': None}] - ['a7eaf121-6b98-4c07-a292-473e2600b0f1.webp']
+2024-01-08 15:24:06,779 :: INFO :: 178 :: Add array images [{'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:06,779 :: INFO :: 179 :: For save complete [{'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:08,436 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:24:08,436 :: INFO :: 212 :: Checa imagens [{'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:08,446 :: DEBUG :: 360 :: Importing BlpImagePlugin
+2024-01-08 15:24:08,447 :: DEBUG :: 360 :: Importing BmpImagePlugin
+2024-01-08 15:24:08,447 :: DEBUG :: 360 :: Importing BufrStubImagePlugin
+2024-01-08 15:24:08,447 :: DEBUG :: 360 :: Importing CurImagePlugin
+2024-01-08 15:24:08,447 :: DEBUG :: 360 :: Importing DcxImagePlugin
+2024-01-08 15:24:08,447 :: DEBUG :: 360 :: Importing DdsImagePlugin
+2024-01-08 15:24:08,448 :: DEBUG :: 360 :: Importing EpsImagePlugin
+2024-01-08 15:24:08,448 :: DEBUG :: 360 :: Importing FitsImagePlugin
+2024-01-08 15:24:08,448 :: DEBUG :: 360 :: Importing FliImagePlugin
+2024-01-08 15:24:08,448 :: DEBUG :: 360 :: Importing FpxImagePlugin
+2024-01-08 15:24:08,449 :: DEBUG :: 360 :: Importing FtexImagePlugin
+2024-01-08 15:24:08,449 :: DEBUG :: 360 :: Importing GbrImagePlugin
+2024-01-08 15:24:08,449 :: DEBUG :: 360 :: Importing GifImagePlugin
+2024-01-08 15:24:08,449 :: DEBUG :: 360 :: Importing GribStubImagePlugin
+2024-01-08 15:24:08,449 :: DEBUG :: 360 :: Importing Hdf5StubImagePlugin
+2024-01-08 15:24:08,449 :: DEBUG :: 360 :: Importing IcnsImagePlugin
+2024-01-08 15:24:08,450 :: DEBUG :: 360 :: Importing IcoImagePlugin
+2024-01-08 15:24:08,450 :: DEBUG :: 360 :: Importing ImImagePlugin
+2024-01-08 15:24:08,451 :: DEBUG :: 360 :: Importing ImtImagePlugin
+2024-01-08 15:24:08,451 :: DEBUG :: 360 :: Importing IptcImagePlugin
+2024-01-08 15:24:08,451 :: DEBUG :: 360 :: Importing JpegImagePlugin
+2024-01-08 15:24:08,451 :: DEBUG :: 360 :: Importing Jpeg2KImagePlugin
+2024-01-08 15:24:08,451 :: DEBUG :: 360 :: Importing McIdasImagePlugin
+2024-01-08 15:24:08,451 :: DEBUG :: 360 :: Importing MicImagePlugin
+2024-01-08 15:24:08,453 :: DEBUG :: 360 :: Importing MpegImagePlugin
+2024-01-08 15:24:08,453 :: DEBUG :: 360 :: Importing MpoImagePlugin
+2024-01-08 15:24:08,453 :: DEBUG :: 360 :: Importing MspImagePlugin
+2024-01-08 15:24:08,453 :: DEBUG :: 360 :: Importing PalmImagePlugin
+2024-01-08 15:24:08,454 :: DEBUG :: 360 :: Importing PcdImagePlugin
+2024-01-08 15:24:08,454 :: DEBUG :: 360 :: Importing PcxImagePlugin
+2024-01-08 15:24:08,454 :: DEBUG :: 360 :: Importing PdfImagePlugin
+2024-01-08 15:24:08,458 :: DEBUG :: 360 :: Importing PixarImagePlugin
+2024-01-08 15:24:08,458 :: DEBUG :: 360 :: Importing PngImagePlugin
+2024-01-08 15:24:08,458 :: DEBUG :: 360 :: Importing PpmImagePlugin
+2024-01-08 15:24:08,458 :: DEBUG :: 360 :: Importing PsdImagePlugin
+2024-01-08 15:24:08,458 :: DEBUG :: 360 :: Importing QoiImagePlugin
+2024-01-08 15:24:08,458 :: DEBUG :: 360 :: Importing SgiImagePlugin
+2024-01-08 15:24:08,458 :: DEBUG :: 360 :: Importing SpiderImagePlugin
+2024-01-08 15:24:08,459 :: DEBUG :: 360 :: Importing SunImagePlugin
+2024-01-08 15:24:08,459 :: DEBUG :: 360 :: Importing TgaImagePlugin
+2024-01-08 15:24:08,459 :: DEBUG :: 360 :: Importing TiffImagePlugin
+2024-01-08 15:24:08,459 :: DEBUG :: 360 :: Importing WebPImagePlugin
+2024-01-08 15:24:08,460 :: DEBUG :: 360 :: Importing WmfImagePlugin
+2024-01-08 15:24:08,460 :: DEBUG :: 360 :: Importing XbmImagePlugin
+2024-01-08 15:24:08,460 :: DEBUG :: 360 :: Importing XpmImagePlugin
+2024-01-08 15:24:08,461 :: DEBUG :: 360 :: Importing XVThumbImagePlugin
+2024-01-08 15:24:08,525 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [{'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': None}] - ['926897f7-3969-4efe-a87b-433a2880531e.webp']
+2024-01-08 15:24:15,903 :: INFO :: 178 :: Add array images [{'filename': 'Azimut-Itajai090000.jpg', 'file': <FileStorage: 'Azimut-Itajai090000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:15,903 :: INFO :: 179 :: For save complete [{'filename': 'Azimut-Itajai090000.jpg', 'file': <FileStorage: 'Azimut-Itajai090000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:17,644 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:24:17,645 :: INFO :: 212 :: Checa imagens [{'filename': 'Azimut-Itajai090000.jpg', 'file': <FileStorage: 'Azimut-Itajai090000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:17,664 :: DEBUG :: 360 :: Importing BlpImagePlugin
+2024-01-08 15:24:17,664 :: DEBUG :: 360 :: Importing BmpImagePlugin
+2024-01-08 15:24:17,665 :: DEBUG :: 360 :: Importing BufrStubImagePlugin
+2024-01-08 15:24:17,665 :: DEBUG :: 360 :: Importing CurImagePlugin
+2024-01-08 15:24:17,665 :: DEBUG :: 360 :: Importing DcxImagePlugin
+2024-01-08 15:24:17,665 :: DEBUG :: 360 :: Importing DdsImagePlugin
+2024-01-08 15:24:17,666 :: DEBUG :: 360 :: Importing EpsImagePlugin
+2024-01-08 15:24:17,666 :: DEBUG :: 360 :: Importing FitsImagePlugin
+2024-01-08 15:24:17,666 :: DEBUG :: 360 :: Importing FliImagePlugin
+2024-01-08 15:24:17,667 :: DEBUG :: 360 :: Importing FpxImagePlugin
+2024-01-08 15:24:17,667 :: DEBUG :: 360 :: Importing FtexImagePlugin
+2024-01-08 15:24:17,667 :: DEBUG :: 360 :: Importing GbrImagePlugin
+2024-01-08 15:24:17,667 :: DEBUG :: 360 :: Importing GifImagePlugin
+2024-01-08 15:24:17,667 :: DEBUG :: 360 :: Importing GribStubImagePlugin
+2024-01-08 15:24:17,668 :: DEBUG :: 360 :: Importing Hdf5StubImagePlugin
+2024-01-08 15:24:17,668 :: DEBUG :: 360 :: Importing IcnsImagePlugin
+2024-01-08 15:24:17,669 :: DEBUG :: 360 :: Importing IcoImagePlugin
+2024-01-08 15:24:17,669 :: DEBUG :: 360 :: Importing ImImagePlugin
+2024-01-08 15:24:17,669 :: DEBUG :: 360 :: Importing ImtImagePlugin
+2024-01-08 15:24:17,670 :: DEBUG :: 360 :: Importing IptcImagePlugin
+2024-01-08 15:24:17,670 :: DEBUG :: 360 :: Importing JpegImagePlugin
+2024-01-08 15:24:17,670 :: DEBUG :: 360 :: Importing Jpeg2KImagePlugin
+2024-01-08 15:24:17,670 :: DEBUG :: 360 :: Importing McIdasImagePlugin
+2024-01-08 15:24:17,670 :: DEBUG :: 360 :: Importing MicImagePlugin
+2024-01-08 15:24:17,670 :: DEBUG :: 360 :: Importing MpegImagePlugin
+2024-01-08 15:24:17,670 :: DEBUG :: 360 :: Importing MpoImagePlugin
+2024-01-08 15:24:17,671 :: DEBUG :: 360 :: Importing MspImagePlugin
+2024-01-08 15:24:17,671 :: DEBUG :: 360 :: Importing PalmImagePlugin
+2024-01-08 15:24:17,671 :: DEBUG :: 360 :: Importing PcdImagePlugin
+2024-01-08 15:24:17,672 :: DEBUG :: 360 :: Importing PcxImagePlugin
+2024-01-08 15:24:17,672 :: DEBUG :: 360 :: Importing PdfImagePlugin
+2024-01-08 15:24:17,676 :: DEBUG :: 360 :: Importing PixarImagePlugin
+2024-01-08 15:24:17,676 :: DEBUG :: 360 :: Importing PngImagePlugin
+2024-01-08 15:24:17,676 :: DEBUG :: 360 :: Importing PpmImagePlugin
+2024-01-08 15:24:17,676 :: DEBUG :: 360 :: Importing PsdImagePlugin
+2024-01-08 15:24:17,677 :: DEBUG :: 360 :: Importing QoiImagePlugin
+2024-01-08 15:24:17,677 :: DEBUG :: 360 :: Importing SgiImagePlugin
+2024-01-08 15:24:17,677 :: DEBUG :: 360 :: Importing SpiderImagePlugin
+2024-01-08 15:24:17,677 :: DEBUG :: 360 :: Importing SunImagePlugin
+2024-01-08 15:24:17,677 :: DEBUG :: 360 :: Importing TgaImagePlugin
+2024-01-08 15:24:17,678 :: DEBUG :: 360 :: Importing TiffImagePlugin
+2024-01-08 15:24:17,678 :: DEBUG :: 360 :: Importing WebPImagePlugin
+2024-01-08 15:24:17,678 :: DEBUG :: 360 :: Importing WmfImagePlugin
+2024-01-08 15:24:17,679 :: DEBUG :: 360 :: Importing XbmImagePlugin
+2024-01-08 15:24:17,679 :: DEBUG :: 360 :: Importing XpmImagePlugin
+2024-01-08 15:24:17,679 :: DEBUG :: 360 :: Importing XVThumbImagePlugin
+2024-01-08 15:24:17,824 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [{'filename': 'Azimut-Itajai090000.jpg', 'file': <FileStorage: 'Azimut-Itajai090000.jpg' ('image/jpeg')>, 'types': None}] - ['Azimut-Itajai090000.webp']
+2024-01-08 15:24:23,222 :: INFO :: 178 :: Add array images [{'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:23,222 :: INFO :: 179 :: For save complete [{'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:25,061 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:24:25,062 :: INFO :: 212 :: Checa imagens []
+2024-01-08 15:24:25,062 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [] - []
+2024-01-08 15:24:28,871 :: INFO :: 178 :: Add array images [{'filename': 'f5176b46-2d81-495a-b961-a8ac8ea215b2.jpeg', 'file': <FileStorage: 'f5176b46-2d81-495a-b961-a8ac8ea215b2.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:28,871 :: INFO :: 179 :: For save complete [{'filename': 'f5176b46-2d81-495a-b961-a8ac8ea215b2.jpeg', 'file': <FileStorage: 'f5176b46-2d81-495a-b961-a8ac8ea215b2.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:30,428 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:24:30,428 :: INFO :: 212 :: Checa imagens [{'filename': 'f5176b46-2d81-495a-b961-a8ac8ea215b2.jpeg', 'file': <FileStorage: 'f5176b46-2d81-495a-b961-a8ac8ea215b2.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:30,440 :: DEBUG :: 360 :: Importing BlpImagePlugin
+2024-01-08 15:24:30,440 :: DEBUG :: 360 :: Importing BmpImagePlugin
+2024-01-08 15:24:30,440 :: DEBUG :: 360 :: Importing BufrStubImagePlugin
+2024-01-08 15:24:30,441 :: DEBUG :: 360 :: Importing CurImagePlugin
+2024-01-08 15:24:30,441 :: DEBUG :: 360 :: Importing DcxImagePlugin
+2024-01-08 15:24:30,441 :: DEBUG :: 360 :: Importing DdsImagePlugin
+2024-01-08 15:24:30,441 :: DEBUG :: 360 :: Importing EpsImagePlugin
+2024-01-08 15:24:30,442 :: DEBUG :: 360 :: Importing FitsImagePlugin
+2024-01-08 15:24:30,442 :: DEBUG :: 360 :: Importing FliImagePlugin
+2024-01-08 15:24:30,442 :: DEBUG :: 360 :: Importing FpxImagePlugin
+2024-01-08 15:24:30,442 :: DEBUG :: 360 :: Importing FtexImagePlugin
+2024-01-08 15:24:30,443 :: DEBUG :: 360 :: Importing GbrImagePlugin
+2024-01-08 15:24:30,443 :: DEBUG :: 360 :: Importing GifImagePlugin
+2024-01-08 15:24:30,443 :: DEBUG :: 360 :: Importing GribStubImagePlugin
+2024-01-08 15:24:30,443 :: DEBUG :: 360 :: Importing Hdf5StubImagePlugin
+2024-01-08 15:24:30,443 :: DEBUG :: 360 :: Importing IcnsImagePlugin
+2024-01-08 15:24:30,444 :: DEBUG :: 360 :: Importing IcoImagePlugin
+2024-01-08 15:24:30,444 :: DEBUG :: 360 :: Importing ImImagePlugin
+2024-01-08 15:24:30,445 :: DEBUG :: 360 :: Importing ImtImagePlugin
+2024-01-08 15:24:30,445 :: DEBUG :: 360 :: Importing IptcImagePlugin
+2024-01-08 15:24:30,445 :: DEBUG :: 360 :: Importing JpegImagePlugin
+2024-01-08 15:24:30,445 :: DEBUG :: 360 :: Importing Jpeg2KImagePlugin
+2024-01-08 15:24:30,445 :: DEBUG :: 360 :: Importing McIdasImagePlugin
+2024-01-08 15:24:30,445 :: DEBUG :: 360 :: Importing MicImagePlugin
+2024-01-08 15:24:30,446 :: DEBUG :: 360 :: Importing MpegImagePlugin
+2024-01-08 15:24:30,446 :: DEBUG :: 360 :: Importing MpoImagePlugin
+2024-01-08 15:24:30,447 :: DEBUG :: 360 :: Importing MspImagePlugin
+2024-01-08 15:24:30,447 :: DEBUG :: 360 :: Importing PalmImagePlugin
+2024-01-08 15:24:30,447 :: DEBUG :: 360 :: Importing PcdImagePlugin
+2024-01-08 15:24:30,447 :: DEBUG :: 360 :: Importing PcxImagePlugin
+2024-01-08 15:24:30,447 :: DEBUG :: 360 :: Importing PdfImagePlugin
+2024-01-08 15:24:30,451 :: DEBUG :: 360 :: Importing PixarImagePlugin
+2024-01-08 15:24:30,451 :: DEBUG :: 360 :: Importing PngImagePlugin
+2024-01-08 15:24:30,451 :: DEBUG :: 360 :: Importing PpmImagePlugin
+2024-01-08 15:24:30,451 :: DEBUG :: 360 :: Importing PsdImagePlugin
+2024-01-08 15:24:30,452 :: DEBUG :: 360 :: Importing QoiImagePlugin
+2024-01-08 15:24:30,452 :: DEBUG :: 360 :: Importing SgiImagePlugin
+2024-01-08 15:24:30,452 :: DEBUG :: 360 :: Importing SpiderImagePlugin
+2024-01-08 15:24:30,452 :: DEBUG :: 360 :: Importing SunImagePlugin
+2024-01-08 15:24:30,452 :: DEBUG :: 360 :: Importing TgaImagePlugin
+2024-01-08 15:24:30,453 :: DEBUG :: 360 :: Importing TiffImagePlugin
+2024-01-08 15:24:30,453 :: DEBUG :: 360 :: Importing WebPImagePlugin
+2024-01-08 15:24:30,453 :: DEBUG :: 360 :: Importing WmfImagePlugin
+2024-01-08 15:24:30,454 :: DEBUG :: 360 :: Importing XbmImagePlugin
+2024-01-08 15:24:30,454 :: DEBUG :: 360 :: Importing XpmImagePlugin
+2024-01-08 15:24:30,454 :: DEBUG :: 360 :: Importing XVThumbImagePlugin
+2024-01-08 15:24:30,534 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [{'filename': 'f5176b46-2d81-495a-b961-a8ac8ea215b2.jpeg', 'file': <FileStorage: 'f5176b46-2d81-495a-b961-a8ac8ea215b2.jpeg' ('image/jpeg')>, 'types': None}] - ['f5176b46-2d81-495a-b961-a8ac8ea215b2.webp']
+2024-01-08 15:24:35,035 :: INFO :: 178 :: Add array images [{'filename': 'AUA - 11 andar - aerea0000.jpg', 'file': <FileStorage: 'AUA - 11 andar - aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:35,035 :: INFO :: 179 :: For save complete [{'filename': 'AUA - 11 andar - aerea0000.jpg', 'file': <FileStorage: 'AUA - 11 andar - aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:37,045 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:24:37,045 :: INFO :: 212 :: Checa imagens []
+2024-01-08 15:24:37,045 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [] - []
+2024-01-08 15:24:48,414 :: INFO :: 178 :: Add array images [{'filename': 'AUA - 11 andar - aerea0000.jpg', 'file': <FileStorage: 'AUA - 11 andar - aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:48,415 :: INFO :: 179 :: For save complete [{'filename': 'AUA - 11 andar - aerea0000.jpg', 'file': <FileStorage: 'AUA - 11 andar - aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:50,712 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:24:50,712 :: INFO :: 212 :: Checa imagens []
+2024-01-08 15:24:50,712 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [] - []
+2024-01-08 15:24:56,812 :: INFO :: 178 :: Add array images [{'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:24:56,812 :: INFO :: 179 :: For save complete [{'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:25:01,928 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:25:01,928 :: INFO :: 212 :: Checa imagens []
+2024-01-08 15:25:01,928 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [] - []
+2024-01-08 15:25:11,284 :: INFO :: 178 :: Add array images [{'filename': 'AUA---11-andar---cafeteria0000.jpg', 'file': <FileStorage: 'AUA---11-andar---cafeteria0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:25:11,284 :: INFO :: 179 :: For save complete [{'filename': 'AUA---11-andar---cafeteria0000.jpg', 'file': <FileStorage: 'AUA---11-andar---cafeteria0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:25:13,649 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:25:13,649 :: INFO :: 212 :: Checa imagens []
+2024-01-08 15:25:13,649 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [] - []
+2024-01-08 15:25:18,595 :: INFO :: 178 :: Add array images [{'filename': 'Azimut-Itajai-ISO-0020001.jpg', 'file': <FileStorage: 'Azimut-Itajai-ISO-0020001.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:25:18,595 :: INFO :: 179 :: For save complete [{'filename': 'Azimut-Itajai-ISO-0020001.jpg', 'file': <FileStorage: 'Azimut-Itajai-ISO-0020001.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:25:20,020 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:25:20,020 :: INFO :: 212 :: Checa imagens [{'filename': 'Azimut-Itajai-ISO-0020001.jpg', 'file': <FileStorage: 'Azimut-Itajai-ISO-0020001.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:25:20,038 :: DEBUG :: 360 :: Importing BlpImagePlugin
+2024-01-08 15:25:20,039 :: DEBUG :: 360 :: Importing BmpImagePlugin
+2024-01-08 15:25:20,039 :: DEBUG :: 360 :: Importing BufrStubImagePlugin
+2024-01-08 15:25:20,039 :: DEBUG :: 360 :: Importing CurImagePlugin
+2024-01-08 15:25:20,039 :: DEBUG :: 360 :: Importing DcxImagePlugin
+2024-01-08 15:25:20,039 :: DEBUG :: 360 :: Importing DdsImagePlugin
+2024-01-08 15:25:20,040 :: DEBUG :: 360 :: Importing EpsImagePlugin
+2024-01-08 15:25:20,040 :: DEBUG :: 360 :: Importing FitsImagePlugin
+2024-01-08 15:25:20,040 :: DEBUG :: 360 :: Importing FliImagePlugin
+2024-01-08 15:25:20,040 :: DEBUG :: 360 :: Importing FpxImagePlugin
+2024-01-08 15:25:20,041 :: DEBUG :: 360 :: Importing FtexImagePlugin
+2024-01-08 15:25:20,041 :: DEBUG :: 360 :: Importing GbrImagePlugin
+2024-01-08 15:25:20,041 :: DEBUG :: 360 :: Importing GifImagePlugin
+2024-01-08 15:25:20,041 :: DEBUG :: 360 :: Importing GribStubImagePlugin
+2024-01-08 15:25:20,041 :: DEBUG :: 360 :: Importing Hdf5StubImagePlugin
+2024-01-08 15:25:20,042 :: DEBUG :: 360 :: Importing IcnsImagePlugin
+2024-01-08 15:25:20,042 :: DEBUG :: 360 :: Importing IcoImagePlugin
+2024-01-08 15:25:20,042 :: DEBUG :: 360 :: Importing ImImagePlugin
+2024-01-08 15:25:20,043 :: DEBUG :: 360 :: Importing ImtImagePlugin
+2024-01-08 15:25:20,043 :: DEBUG :: 360 :: Importing IptcImagePlugin
+2024-01-08 15:25:20,043 :: DEBUG :: 360 :: Importing JpegImagePlugin
+2024-01-08 15:25:20,043 :: DEBUG :: 360 :: Importing Jpeg2KImagePlugin
+2024-01-08 15:25:20,043 :: DEBUG :: 360 :: Importing McIdasImagePlugin
+2024-01-08 15:25:20,043 :: DEBUG :: 360 :: Importing MicImagePlugin
+2024-01-08 15:25:20,044 :: DEBUG :: 360 :: Importing MpegImagePlugin
+2024-01-08 15:25:20,044 :: DEBUG :: 360 :: Importing MpoImagePlugin
+2024-01-08 15:25:20,044 :: DEBUG :: 360 :: Importing MspImagePlugin
+2024-01-08 15:25:20,044 :: DEBUG :: 360 :: Importing PalmImagePlugin
+2024-01-08 15:25:20,045 :: DEBUG :: 360 :: Importing PcdImagePlugin
+2024-01-08 15:25:20,045 :: DEBUG :: 360 :: Importing PcxImagePlugin
+2024-01-08 15:25:20,045 :: DEBUG :: 360 :: Importing PdfImagePlugin
+2024-01-08 15:25:20,049 :: DEBUG :: 360 :: Importing PixarImagePlugin
+2024-01-08 15:25:20,049 :: DEBUG :: 360 :: Importing PngImagePlugin
+2024-01-08 15:25:20,049 :: DEBUG :: 360 :: Importing PpmImagePlugin
+2024-01-08 15:25:20,049 :: DEBUG :: 360 :: Importing PsdImagePlugin
+2024-01-08 15:25:20,049 :: DEBUG :: 360 :: Importing QoiImagePlugin
+2024-01-08 15:25:20,049 :: DEBUG :: 360 :: Importing SgiImagePlugin
+2024-01-08 15:25:20,049 :: DEBUG :: 360 :: Importing SpiderImagePlugin
+2024-01-08 15:25:20,050 :: DEBUG :: 360 :: Importing SunImagePlugin
+2024-01-08 15:25:20,050 :: DEBUG :: 360 :: Importing TgaImagePlugin
+2024-01-08 15:25:20,050 :: DEBUG :: 360 :: Importing TiffImagePlugin
+2024-01-08 15:25:20,050 :: DEBUG :: 360 :: Importing WebPImagePlugin
+2024-01-08 15:25:20,051 :: DEBUG :: 360 :: Importing WmfImagePlugin
+2024-01-08 15:25:20,051 :: DEBUG :: 360 :: Importing XbmImagePlugin
+2024-01-08 15:25:20,051 :: DEBUG :: 360 :: Importing XpmImagePlugin
+2024-01-08 15:25:20,052 :: DEBUG :: 360 :: Importing XVThumbImagePlugin
+2024-01-08 15:25:20,207 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [{'filename': 'Azimut-Itajai-ISO-0020001.jpg', 'file': <FileStorage: 'Azimut-Itajai-ISO-0020001.jpg' ('image/jpeg')>, 'types': None}] - ['Azimut-Itajai-ISO-0020001.webp']
+2024-01-08 15:25:26,878 :: INFO :: 178 :: Add array images [{'filename': 'AUA - 10 andar - aerea0000.jpg', 'file': <FileStorage: 'AUA - 10 andar - aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:25:26,879 :: INFO :: 179 :: For save complete [{'filename': 'AUA - 10 andar - aerea0000.jpg', 'file': <FileStorage: 'AUA - 10 andar - aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:25:30,051 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:25:30,052 :: INFO :: 212 :: Checa imagens []
+2024-01-08 15:25:30,052 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [] - []
+2024-01-08 15:25:36,282 :: INFO :: 178 :: Add array images [{'filename': 'Azimut-ItajaiAzimutItajaiISO0020001.jpg', 'file': <FileStorage: 'Azimut-ItajaiAzimutItajaiISO0020001.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:25:36,282 :: INFO :: 179 :: For save complete [{'filename': 'Azimut-ItajaiAzimutItajaiISO0020001.jpg', 'file': <FileStorage: 'Azimut-ItajaiAzimutItajaiISO0020001.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:25:37,570 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:25:37,571 :: INFO :: 212 :: Checa imagens [{'filename': 'Azimut-ItajaiAzimutItajaiISO0020001.jpg', 'file': <FileStorage: 'Azimut-ItajaiAzimutItajaiISO0020001.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:25:37,589 :: DEBUG :: 360 :: Importing BlpImagePlugin
+2024-01-08 15:25:37,590 :: DEBUG :: 360 :: Importing BmpImagePlugin
+2024-01-08 15:25:37,590 :: DEBUG :: 360 :: Importing BufrStubImagePlugin
+2024-01-08 15:25:37,590 :: DEBUG :: 360 :: Importing CurImagePlugin
+2024-01-08 15:25:37,591 :: DEBUG :: 360 :: Importing DcxImagePlugin
+2024-01-08 15:25:37,591 :: DEBUG :: 360 :: Importing DdsImagePlugin
+2024-01-08 15:25:37,591 :: DEBUG :: 360 :: Importing EpsImagePlugin
+2024-01-08 15:25:37,592 :: DEBUG :: 360 :: Importing FitsImagePlugin
+2024-01-08 15:25:37,593 :: DEBUG :: 360 :: Importing FliImagePlugin
+2024-01-08 15:25:37,593 :: DEBUG :: 360 :: Importing FpxImagePlugin
+2024-01-08 15:25:37,593 :: DEBUG :: 360 :: Importing FtexImagePlugin
+2024-01-08 15:25:37,594 :: DEBUG :: 360 :: Importing GbrImagePlugin
+2024-01-08 15:25:37,594 :: DEBUG :: 360 :: Importing GifImagePlugin
+2024-01-08 15:25:37,594 :: DEBUG :: 360 :: Importing GribStubImagePlugin
+2024-01-08 15:25:37,594 :: DEBUG :: 360 :: Importing Hdf5StubImagePlugin
+2024-01-08 15:25:37,594 :: DEBUG :: 360 :: Importing IcnsImagePlugin
+2024-01-08 15:25:37,595 :: DEBUG :: 360 :: Importing IcoImagePlugin
+2024-01-08 15:25:37,596 :: DEBUG :: 360 :: Importing ImImagePlugin
+2024-01-08 15:25:37,596 :: DEBUG :: 360 :: Importing ImtImagePlugin
+2024-01-08 15:25:37,596 :: DEBUG :: 360 :: Importing IptcImagePlugin
+2024-01-08 15:25:37,597 :: DEBUG :: 360 :: Importing JpegImagePlugin
+2024-01-08 15:25:37,597 :: DEBUG :: 360 :: Importing Jpeg2KImagePlugin
+2024-01-08 15:25:37,597 :: DEBUG :: 360 :: Importing McIdasImagePlugin
+2024-01-08 15:25:37,597 :: DEBUG :: 360 :: Importing MicImagePlugin
+2024-01-08 15:25:37,597 :: DEBUG :: 360 :: Importing MpegImagePlugin
+2024-01-08 15:25:37,597 :: DEBUG :: 360 :: Importing MpoImagePlugin
+2024-01-08 15:25:37,598 :: DEBUG :: 360 :: Importing MspImagePlugin
+2024-01-08 15:25:37,598 :: DEBUG :: 360 :: Importing PalmImagePlugin
+2024-01-08 15:25:37,598 :: DEBUG :: 360 :: Importing PcdImagePlugin
+2024-01-08 15:25:37,598 :: DEBUG :: 360 :: Importing PcxImagePlugin
+2024-01-08 15:25:37,599 :: DEBUG :: 360 :: Importing PdfImagePlugin
+2024-01-08 15:25:37,603 :: DEBUG :: 360 :: Importing PixarImagePlugin
+2024-01-08 15:25:37,603 :: DEBUG :: 360 :: Importing PngImagePlugin
+2024-01-08 15:25:37,603 :: DEBUG :: 360 :: Importing PpmImagePlugin
+2024-01-08 15:25:37,603 :: DEBUG :: 360 :: Importing PsdImagePlugin
+2024-01-08 15:25:37,603 :: DEBUG :: 360 :: Importing QoiImagePlugin
+2024-01-08 15:25:37,604 :: DEBUG :: 360 :: Importing SgiImagePlugin
+2024-01-08 15:25:37,604 :: DEBUG :: 360 :: Importing SpiderImagePlugin
+2024-01-08 15:25:37,604 :: DEBUG :: 360 :: Importing SunImagePlugin
+2024-01-08 15:25:37,604 :: DEBUG :: 360 :: Importing TgaImagePlugin
+2024-01-08 15:25:37,605 :: DEBUG :: 360 :: Importing TiffImagePlugin
+2024-01-08 15:25:37,605 :: DEBUG :: 360 :: Importing WebPImagePlugin
+2024-01-08 15:25:37,605 :: DEBUG :: 360 :: Importing WmfImagePlugin
+2024-01-08 15:25:37,606 :: DEBUG :: 360 :: Importing XbmImagePlugin
+2024-01-08 15:25:37,606 :: DEBUG :: 360 :: Importing XpmImagePlugin
+2024-01-08 15:25:37,607 :: DEBUG :: 360 :: Importing XVThumbImagePlugin
+2024-01-08 15:25:37,774 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [{'filename': 'Azimut-ItajaiAzimutItajaiISO0020001.jpg', 'file': <FileStorage: 'Azimut-ItajaiAzimutItajaiISO0020001.jpg' ('image/jpeg')>, 'types': None}] - ['Azimut-ItajaiAzimutItajaiISO0020001.webp']
+2024-01-08 15:25:45,324 :: INFO :: 178 :: Add array images [{'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'AUA---11-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---11-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:25:45,324 :: INFO :: 179 :: For save complete [{'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'AUA---11-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---11-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:25:49,126 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:25:49,126 :: INFO :: 212 :: Checa imagens [{'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'AUA---11-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---11-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:25:49,145 :: DEBUG :: 360 :: Importing BlpImagePlugin
+2024-01-08 15:25:49,146 :: DEBUG :: 360 :: Importing BmpImagePlugin
+2024-01-08 15:25:49,146 :: DEBUG :: 360 :: Importing BufrStubImagePlugin
+2024-01-08 15:25:49,146 :: DEBUG :: 360 :: Importing CurImagePlugin
+2024-01-08 15:25:49,146 :: DEBUG :: 360 :: Importing DcxImagePlugin
+2024-01-08 15:25:49,147 :: DEBUG :: 360 :: Importing DdsImagePlugin
+2024-01-08 15:25:49,147 :: DEBUG :: 360 :: Importing EpsImagePlugin
+2024-01-08 15:25:49,148 :: DEBUG :: 360 :: Importing FitsImagePlugin
+2024-01-08 15:25:49,148 :: DEBUG :: 360 :: Importing FliImagePlugin
+2024-01-08 15:25:49,148 :: DEBUG :: 360 :: Importing FpxImagePlugin
+2024-01-08 15:25:49,148 :: DEBUG :: 360 :: Importing FtexImagePlugin
+2024-01-08 15:25:49,148 :: DEBUG :: 360 :: Importing GbrImagePlugin
+2024-01-08 15:25:49,149 :: DEBUG :: 360 :: Importing GifImagePlugin
+2024-01-08 15:25:49,149 :: DEBUG :: 360 :: Importing GribStubImagePlugin
+2024-01-08 15:25:49,149 :: DEBUG :: 360 :: Importing Hdf5StubImagePlugin
+2024-01-08 15:25:49,149 :: DEBUG :: 360 :: Importing IcnsImagePlugin
+2024-01-08 15:25:49,150 :: DEBUG :: 360 :: Importing IcoImagePlugin
+2024-01-08 15:25:49,150 :: DEBUG :: 360 :: Importing ImImagePlugin
+2024-01-08 15:25:49,150 :: DEBUG :: 360 :: Importing ImtImagePlugin
+2024-01-08 15:25:49,151 :: DEBUG :: 360 :: Importing IptcImagePlugin
+2024-01-08 15:25:49,151 :: DEBUG :: 360 :: Importing JpegImagePlugin
+2024-01-08 15:25:49,151 :: DEBUG :: 360 :: Importing Jpeg2KImagePlugin
+2024-01-08 15:25:49,151 :: DEBUG :: 360 :: Importing McIdasImagePlugin
+2024-01-08 15:25:49,151 :: DEBUG :: 360 :: Importing MicImagePlugin
+2024-01-08 15:25:49,151 :: DEBUG :: 360 :: Importing MpegImagePlugin
+2024-01-08 15:25:49,151 :: DEBUG :: 360 :: Importing MpoImagePlugin
+2024-01-08 15:25:49,152 :: DEBUG :: 360 :: Importing MspImagePlugin
+2024-01-08 15:25:49,152 :: DEBUG :: 360 :: Importing PalmImagePlugin
+2024-01-08 15:25:49,152 :: DEBUG :: 360 :: Importing PcdImagePlugin
+2024-01-08 15:25:49,152 :: DEBUG :: 360 :: Importing PcxImagePlugin
+2024-01-08 15:25:49,152 :: DEBUG :: 360 :: Importing PdfImagePlugin
+2024-01-08 15:25:49,156 :: DEBUG :: 360 :: Importing PixarImagePlugin
+2024-01-08 15:25:49,156 :: DEBUG :: 360 :: Importing PngImagePlugin
+2024-01-08 15:25:49,157 :: DEBUG :: 360 :: Importing PpmImagePlugin
+2024-01-08 15:25:49,157 :: DEBUG :: 360 :: Importing PsdImagePlugin
+2024-01-08 15:25:49,157 :: DEBUG :: 360 :: Importing QoiImagePlugin
+2024-01-08 15:25:49,157 :: DEBUG :: 360 :: Importing SgiImagePlugin
+2024-01-08 15:25:49,157 :: DEBUG :: 360 :: Importing SpiderImagePlugin
+2024-01-08 15:25:49,157 :: DEBUG :: 360 :: Importing SunImagePlugin
+2024-01-08 15:25:49,157 :: DEBUG :: 360 :: Importing TgaImagePlugin
+2024-01-08 15:25:49,158 :: DEBUG :: 360 :: Importing TiffImagePlugin
+2024-01-08 15:25:49,158 :: DEBUG :: 360 :: Importing WebPImagePlugin
+2024-01-08 15:25:49,158 :: DEBUG :: 360 :: Importing WmfImagePlugin
+2024-01-08 15:25:49,159 :: DEBUG :: 360 :: Importing XbmImagePlugin
+2024-01-08 15:25:49,159 :: DEBUG :: 360 :: Importing XpmImagePlugin
+2024-01-08 15:25:49,159 :: DEBUG :: 360 :: Importing XVThumbImagePlugin
+2024-01-08 15:25:49,496 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [{'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'AUA---11-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---11-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}] - ['AUA---10-andar---aerea0000.webp', 'AUA---10-andar---aerea0000.webp', 'AUA---11-andar---aerea0000.webp']
+2024-01-08 15:25:59,263 :: INFO :: 178 :: Add array images [{'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'AUA---11-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---11-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'Casa-Samuel-Frente-.jpg', 'file': <FileStorage: 'Casa-Samuel-Frente-.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:25:59,263 :: INFO :: 179 :: For save complete [{'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'AUA---10-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---10-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'AUA---11-andar---aerea0000.jpg', 'file': <FileStorage: 'AUA---11-andar---aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'Casa-Samuel-Frente-.jpg', 'file': <FileStorage: 'Casa-Samuel-Frente-.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:26:01,793 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:26:01,793 :: INFO :: 212 :: Checa imagens []
+2024-01-08 15:26:01,793 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [] - []
+2024-01-08 15:26:10,218 :: INFO :: 178 :: Add array images [{'filename': 'Casa-Samuel-Frente-.jpg', 'file': <FileStorage: 'Casa-Samuel-Frente-.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:26:10,218 :: INFO :: 179 :: For save complete [{'filename': 'Casa-Samuel-Frente-.jpg', 'file': <FileStorage: 'Casa-Samuel-Frente-.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:26:11,748 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:26:11,748 :: INFO :: 212 :: Checa imagens [{'filename': 'Casa-Samuel-Frente-.jpg', 'file': <FileStorage: 'Casa-Samuel-Frente-.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:26:11,766 :: DEBUG :: 360 :: Importing BlpImagePlugin
+2024-01-08 15:26:11,767 :: DEBUG :: 360 :: Importing BmpImagePlugin
+2024-01-08 15:26:11,767 :: DEBUG :: 360 :: Importing BufrStubImagePlugin
+2024-01-08 15:26:11,767 :: DEBUG :: 360 :: Importing CurImagePlugin
+2024-01-08 15:26:11,767 :: DEBUG :: 360 :: Importing DcxImagePlugin
+2024-01-08 15:26:11,768 :: DEBUG :: 360 :: Importing DdsImagePlugin
+2024-01-08 15:26:11,768 :: DEBUG :: 360 :: Importing EpsImagePlugin
+2024-01-08 15:26:11,768 :: DEBUG :: 360 :: Importing FitsImagePlugin
+2024-01-08 15:26:11,769 :: DEBUG :: 360 :: Importing FliImagePlugin
+2024-01-08 15:26:11,769 :: DEBUG :: 360 :: Importing FpxImagePlugin
+2024-01-08 15:26:11,769 :: DEBUG :: 360 :: Importing FtexImagePlugin
+2024-01-08 15:26:11,769 :: DEBUG :: 360 :: Importing GbrImagePlugin
+2024-01-08 15:26:11,769 :: DEBUG :: 360 :: Importing GifImagePlugin
+2024-01-08 15:26:11,770 :: DEBUG :: 360 :: Importing GribStubImagePlugin
+2024-01-08 15:26:11,770 :: DEBUG :: 360 :: Importing Hdf5StubImagePlugin
+2024-01-08 15:26:11,770 :: DEBUG :: 360 :: Importing IcnsImagePlugin
+2024-01-08 15:26:11,770 :: DEBUG :: 360 :: Importing IcoImagePlugin
+2024-01-08 15:26:11,771 :: DEBUG :: 360 :: Importing ImImagePlugin
+2024-01-08 15:26:11,771 :: DEBUG :: 360 :: Importing ImtImagePlugin
+2024-01-08 15:26:11,771 :: DEBUG :: 360 :: Importing IptcImagePlugin
+2024-01-08 15:26:11,772 :: DEBUG :: 360 :: Importing JpegImagePlugin
+2024-01-08 15:26:11,772 :: DEBUG :: 360 :: Importing Jpeg2KImagePlugin
+2024-01-08 15:26:11,772 :: DEBUG :: 360 :: Importing McIdasImagePlugin
+2024-01-08 15:26:11,772 :: DEBUG :: 360 :: Importing MicImagePlugin
+2024-01-08 15:26:11,772 :: DEBUG :: 360 :: Importing MpegImagePlugin
+2024-01-08 15:26:11,772 :: DEBUG :: 360 :: Importing MpoImagePlugin
+2024-01-08 15:26:11,772 :: DEBUG :: 360 :: Importing MspImagePlugin
+2024-01-08 15:26:11,772 :: DEBUG :: 360 :: Importing PalmImagePlugin
+2024-01-08 15:26:11,773 :: DEBUG :: 360 :: Importing PcdImagePlugin
+2024-01-08 15:26:11,773 :: DEBUG :: 360 :: Importing PcxImagePlugin
+2024-01-08 15:26:11,773 :: DEBUG :: 360 :: Importing PdfImagePlugin
+2024-01-08 15:26:11,777 :: DEBUG :: 360 :: Importing PixarImagePlugin
+2024-01-08 15:26:11,777 :: DEBUG :: 360 :: Importing PngImagePlugin
+2024-01-08 15:26:11,777 :: DEBUG :: 360 :: Importing PpmImagePlugin
+2024-01-08 15:26:11,777 :: DEBUG :: 360 :: Importing PsdImagePlugin
+2024-01-08 15:26:11,777 :: DEBUG :: 360 :: Importing QoiImagePlugin
+2024-01-08 15:26:11,778 :: DEBUG :: 360 :: Importing SgiImagePlugin
+2024-01-08 15:26:11,778 :: DEBUG :: 360 :: Importing SpiderImagePlugin
+2024-01-08 15:26:11,778 :: DEBUG :: 360 :: Importing SunImagePlugin
+2024-01-08 15:26:11,778 :: DEBUG :: 360 :: Importing TgaImagePlugin
+2024-01-08 15:26:11,778 :: DEBUG :: 360 :: Importing TiffImagePlugin
+2024-01-08 15:26:11,778 :: DEBUG :: 360 :: Importing WebPImagePlugin
+2024-01-08 15:26:11,779 :: DEBUG :: 360 :: Importing WmfImagePlugin
+2024-01-08 15:26:11,779 :: DEBUG :: 360 :: Importing XbmImagePlugin
+2024-01-08 15:26:11,780 :: DEBUG :: 360 :: Importing XpmImagePlugin
+2024-01-08 15:26:11,780 :: DEBUG :: 360 :: Importing XVThumbImagePlugin
+2024-01-08 15:26:11,943 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [{'filename': 'Casa-Samuel-Frente-.jpg', 'file': <FileStorage: 'Casa-Samuel-Frente-.jpg' ('image/jpeg')>, 'types': None}] - ['Casa-Samuel-Frente-.webp']
+2024-01-08 15:26:22,347 :: INFO :: 178 :: Add array images [{'filename': 'AUA - 10 andar - aerea0000.jpg', 'file': <FileStorage: 'AUA - 10 andar - aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'Casa-Luita-Frontal.webp', 'file': <FileStorage: 'Casa-Luita-Frontal.webp' ('image/webp')>, 'types': None}]
+2024-01-08 15:26:22,347 :: INFO :: 179 :: For save complete [{'filename': 'AUA - 10 andar - aerea0000.jpg', 'file': <FileStorage: 'AUA - 10 andar - aerea0000.jpg' ('image/jpeg')>, 'types': None}, {'filename': 'Casa-Luita-Frontal.webp', 'file': <FileStorage: 'Casa-Luita-Frontal.webp' ('image/webp')>, 'types': None}]
+2024-01-08 15:26:23,877 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:26:23,877 :: INFO :: 212 :: Checa imagens []
+2024-01-08 15:26:23,877 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [] - []
+2024-01-08 15:26:26,978 :: INFO :: 178 :: Add array images [{'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:26:26,978 :: INFO :: 179 :: For save complete [{'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:26:28,365 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:26:28,365 :: INFO :: 212 :: Checa imagens [{'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:26:28,374 :: DEBUG :: 360 :: Importing BlpImagePlugin
+2024-01-08 15:26:28,375 :: DEBUG :: 360 :: Importing BmpImagePlugin
+2024-01-08 15:26:28,375 :: DEBUG :: 360 :: Importing BufrStubImagePlugin
+2024-01-08 15:26:28,375 :: DEBUG :: 360 :: Importing CurImagePlugin
+2024-01-08 15:26:28,375 :: DEBUG :: 360 :: Importing DcxImagePlugin
+2024-01-08 15:26:28,375 :: DEBUG :: 360 :: Importing DdsImagePlugin
+2024-01-08 15:26:28,376 :: DEBUG :: 360 :: Importing EpsImagePlugin
+2024-01-08 15:26:28,376 :: DEBUG :: 360 :: Importing FitsImagePlugin
+2024-01-08 15:26:28,376 :: DEBUG :: 360 :: Importing FliImagePlugin
+2024-01-08 15:26:28,377 :: DEBUG :: 360 :: Importing FpxImagePlugin
+2024-01-08 15:26:28,377 :: DEBUG :: 360 :: Importing FtexImagePlugin
+2024-01-08 15:26:28,377 :: DEBUG :: 360 :: Importing GbrImagePlugin
+2024-01-08 15:26:28,377 :: DEBUG :: 360 :: Importing GifImagePlugin
+2024-01-08 15:26:28,377 :: DEBUG :: 360 :: Importing GribStubImagePlugin
+2024-01-08 15:26:28,377 :: DEBUG :: 360 :: Importing Hdf5StubImagePlugin
+2024-01-08 15:26:28,378 :: DEBUG :: 360 :: Importing IcnsImagePlugin
+2024-01-08 15:26:28,378 :: DEBUG :: 360 :: Importing IcoImagePlugin
+2024-01-08 15:26:28,379 :: DEBUG :: 360 :: Importing ImImagePlugin
+2024-01-08 15:26:28,379 :: DEBUG :: 360 :: Importing ImtImagePlugin
+2024-01-08 15:26:28,379 :: DEBUG :: 360 :: Importing IptcImagePlugin
+2024-01-08 15:26:28,379 :: DEBUG :: 360 :: Importing JpegImagePlugin
+2024-01-08 15:26:28,379 :: DEBUG :: 360 :: Importing Jpeg2KImagePlugin
+2024-01-08 15:26:28,379 :: DEBUG :: 360 :: Importing McIdasImagePlugin
+2024-01-08 15:26:28,380 :: DEBUG :: 360 :: Importing MicImagePlugin
+2024-01-08 15:26:28,381 :: DEBUG :: 360 :: Importing MpegImagePlugin
+2024-01-08 15:26:28,381 :: DEBUG :: 360 :: Importing MpoImagePlugin
+2024-01-08 15:26:28,381 :: DEBUG :: 360 :: Importing MspImagePlugin
+2024-01-08 15:26:28,381 :: DEBUG :: 360 :: Importing PalmImagePlugin
+2024-01-08 15:26:28,382 :: DEBUG :: 360 :: Importing PcdImagePlugin
+2024-01-08 15:26:28,382 :: DEBUG :: 360 :: Importing PcxImagePlugin
+2024-01-08 15:26:28,382 :: DEBUG :: 360 :: Importing PdfImagePlugin
+2024-01-08 15:26:28,386 :: DEBUG :: 360 :: Importing PixarImagePlugin
+2024-01-08 15:26:28,386 :: DEBUG :: 360 :: Importing PngImagePlugin
+2024-01-08 15:26:28,386 :: DEBUG :: 360 :: Importing PpmImagePlugin
+2024-01-08 15:26:28,386 :: DEBUG :: 360 :: Importing PsdImagePlugin
+2024-01-08 15:26:28,386 :: DEBUG :: 360 :: Importing QoiImagePlugin
+2024-01-08 15:26:28,386 :: DEBUG :: 360 :: Importing SgiImagePlugin
+2024-01-08 15:26:28,386 :: DEBUG :: 360 :: Importing SpiderImagePlugin
+2024-01-08 15:26:28,387 :: DEBUG :: 360 :: Importing SunImagePlugin
+2024-01-08 15:26:28,387 :: DEBUG :: 360 :: Importing TgaImagePlugin
+2024-01-08 15:26:28,387 :: DEBUG :: 360 :: Importing TiffImagePlugin
+2024-01-08 15:26:28,387 :: DEBUG :: 360 :: Importing WebPImagePlugin
+2024-01-08 15:26:28,388 :: DEBUG :: 360 :: Importing WmfImagePlugin
+2024-01-08 15:26:28,388 :: DEBUG :: 360 :: Importing XbmImagePlugin
+2024-01-08 15:26:28,388 :: DEBUG :: 360 :: Importing XpmImagePlugin
+2024-01-08 15:26:28,389 :: DEBUG :: 360 :: Importing XVThumbImagePlugin
+2024-01-08 15:26:28,452 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [{'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': None}] - ['926897f7-3969-4efe-a87b-433a2880531e.webp']
+2024-01-08 15:39:49,416 :: INFO :: 29 ::  monitora array images []
+2024-01-08 15:40:01,813 :: INFO :: 178 :: Add array images [{'filename': 'BMW---Ibirapuera-auditorio-(6).jpg', 'file': <FileStorage: 'BMW---Ibirapuera-auditorio-(6).jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:40:01,813 :: INFO :: 179 :: For save complete [{'filename': 'BMW---Ibirapuera-auditorio-(6).jpg', 'file': <FileStorage: 'BMW---Ibirapuera-auditorio-(6).jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:40:11,976 :: INFO :: 178 :: Add array images [{'filename': 'AUA - 10 andar - aerea0000.jpg', 'file': <FileStorage: 'AUA - 10 andar - aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:40:11,977 :: INFO :: 179 :: For save complete [{'filename': 'AUA - 10 andar - aerea0000.jpg', 'file': <FileStorage: 'AUA - 10 andar - aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:40:13,754 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:40:13,754 :: INFO :: 212 :: Checa imagens [{'filename': 'AUA - 10 andar - aerea0000.jpg', 'file': <FileStorage: 'AUA - 10 andar - aerea0000.jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:40:13,772 :: DEBUG :: 360 :: Importing BlpImagePlugin
+2024-01-08 15:40:13,772 :: DEBUG :: 360 :: Importing BmpImagePlugin
+2024-01-08 15:40:13,772 :: DEBUG :: 360 :: Importing BufrStubImagePlugin
+2024-01-08 15:40:13,773 :: DEBUG :: 360 :: Importing CurImagePlugin
+2024-01-08 15:40:13,773 :: DEBUG :: 360 :: Importing DcxImagePlugin
+2024-01-08 15:40:13,773 :: DEBUG :: 360 :: Importing DdsImagePlugin
+2024-01-08 15:40:13,773 :: DEBUG :: 360 :: Importing EpsImagePlugin
+2024-01-08 15:40:13,774 :: DEBUG :: 360 :: Importing FitsImagePlugin
+2024-01-08 15:40:13,774 :: DEBUG :: 360 :: Importing FliImagePlugin
+2024-01-08 15:40:13,774 :: DEBUG :: 360 :: Importing FpxImagePlugin
+2024-01-08 15:40:13,774 :: DEBUG :: 360 :: Importing FtexImagePlugin
+2024-01-08 15:40:13,775 :: DEBUG :: 360 :: Importing GbrImagePlugin
+2024-01-08 15:40:13,775 :: DEBUG :: 360 :: Importing GifImagePlugin
+2024-01-08 15:40:13,775 :: DEBUG :: 360 :: Importing GribStubImagePlugin
+2024-01-08 15:40:13,775 :: DEBUG :: 360 :: Importing Hdf5StubImagePlugin
+2024-01-08 15:40:13,775 :: DEBUG :: 360 :: Importing IcnsImagePlugin
+2024-01-08 15:40:13,776 :: DEBUG :: 360 :: Importing IcoImagePlugin
+2024-01-08 15:40:13,776 :: DEBUG :: 360 :: Importing ImImagePlugin
+2024-01-08 15:40:13,777 :: DEBUG :: 360 :: Importing ImtImagePlugin
+2024-01-08 15:40:13,777 :: DEBUG :: 360 :: Importing IptcImagePlugin
+2024-01-08 15:40:13,777 :: DEBUG :: 360 :: Importing JpegImagePlugin
+2024-01-08 15:40:13,777 :: DEBUG :: 360 :: Importing Jpeg2KImagePlugin
+2024-01-08 15:40:13,777 :: DEBUG :: 360 :: Importing McIdasImagePlugin
+2024-01-08 15:40:13,777 :: DEBUG :: 360 :: Importing MicImagePlugin
+2024-01-08 15:40:13,778 :: DEBUG :: 360 :: Importing MpegImagePlugin
+2024-01-08 15:40:13,778 :: DEBUG :: 360 :: Importing MpoImagePlugin
+2024-01-08 15:40:13,779 :: DEBUG :: 360 :: Importing MspImagePlugin
+2024-01-08 15:40:13,779 :: DEBUG :: 360 :: Importing PalmImagePlugin
+2024-01-08 15:40:13,779 :: DEBUG :: 360 :: Importing PcdImagePlugin
+2024-01-08 15:40:13,779 :: DEBUG :: 360 :: Importing PcxImagePlugin
+2024-01-08 15:40:13,779 :: DEBUG :: 360 :: Importing PdfImagePlugin
+2024-01-08 15:40:13,783 :: DEBUG :: 360 :: Importing PixarImagePlugin
+2024-01-08 15:40:13,784 :: DEBUG :: 360 :: Importing PngImagePlugin
+2024-01-08 15:40:13,784 :: DEBUG :: 360 :: Importing PpmImagePlugin
+2024-01-08 15:40:13,784 :: DEBUG :: 360 :: Importing PsdImagePlugin
+2024-01-08 15:40:13,784 :: DEBUG :: 360 :: Importing QoiImagePlugin
+2024-01-08 15:40:13,784 :: DEBUG :: 360 :: Importing SgiImagePlugin
+2024-01-08 15:40:13,784 :: DEBUG :: 360 :: Importing SpiderImagePlugin
+2024-01-08 15:40:13,784 :: DEBUG :: 360 :: Importing SunImagePlugin
+2024-01-08 15:40:13,785 :: DEBUG :: 360 :: Importing TgaImagePlugin
+2024-01-08 15:40:13,785 :: DEBUG :: 360 :: Importing TiffImagePlugin
+2024-01-08 15:40:13,785 :: DEBUG :: 360 :: Importing WebPImagePlugin
+2024-01-08 15:40:13,785 :: DEBUG :: 360 :: Importing WmfImagePlugin
+2024-01-08 15:40:13,786 :: DEBUG :: 360 :: Importing XbmImagePlugin
+2024-01-08 15:40:13,786 :: DEBUG :: 360 :: Importing XpmImagePlugin
+2024-01-08 15:40:13,786 :: DEBUG :: 360 :: Importing XVThumbImagePlugin
+2024-01-08 15:40:13,895 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [{'filename': 'AUA - 10 andar - aerea0000.jpg', 'file': <FileStorage: 'AUA - 10 andar - aerea0000.jpg' ('image/jpeg')>, 'types': None}] - ['AUA - 10 andar - aerea0000.webp']
+2024-01-08 15:40:27,279 :: INFO :: 178 :: Add array images [{'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:40:27,279 :: INFO :: 179 :: For save complete [{'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:40:28,915 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:40:28,916 :: INFO :: 212 :: Checa imagens []
+2024-01-08 15:40:28,916 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [] - []
+2024-01-08 15:40:38,631 :: INFO :: 178 :: Add array images [{'filename': 'BioRitmo--(10).jpg', 'file': <FileStorage: 'BioRitmo--(10).jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:40:38,632 :: INFO :: 179 :: For save complete [{'filename': 'BioRitmo--(10).jpg', 'file': <FileStorage: 'BioRitmo--(10).jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:40:41,259 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:40:41,259 :: INFO :: 212 :: Checa imagens []
+2024-01-08 15:40:41,259 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [] - []
+2024-01-08 15:42:18,407 :: INFO :: 178 :: Add array images [{'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}, {'filename': 'BioRitmo--(10).jpg', 'file': <FileStorage: 'BioRitmo--(10).jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:42:18,407 :: INFO :: 179 :: For save complete [{'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}, {'filename': 'BioRitmo--(10).jpg', 'file': <FileStorage: 'BioRitmo--(10).jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:42:26,876 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:42:26,877 :: INFO :: 212 :: Checa imagens []
+2024-01-08 15:42:26,877 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [] - []
+2024-01-08 15:43:09,584 :: INFO :: 178 :: Add array images [{'filename': 'BioRitmo--(7).jpg', 'file': <FileStorage: 'BioRitmo--(7).jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:43:09,584 :: INFO :: 179 :: For save complete [{'filename': 'BioRitmo--(7).jpg', 'file': <FileStorage: 'BioRitmo--(7).jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:43:13,456 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:43:13,456 :: INFO :: 212 :: Checa imagens [{'filename': 'BioRitmo--(7).jpg', 'file': <FileStorage: 'BioRitmo--(7).jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:43:13,474 :: DEBUG :: 360 :: Importing BlpImagePlugin
+2024-01-08 15:43:13,475 :: DEBUG :: 360 :: Importing BmpImagePlugin
+2024-01-08 15:43:13,475 :: DEBUG :: 360 :: Importing BufrStubImagePlugin
+2024-01-08 15:43:13,475 :: DEBUG :: 360 :: Importing CurImagePlugin
+2024-01-08 15:43:13,475 :: DEBUG :: 360 :: Importing DcxImagePlugin
+2024-01-08 15:43:13,476 :: DEBUG :: 360 :: Importing DdsImagePlugin
+2024-01-08 15:43:13,476 :: DEBUG :: 360 :: Importing EpsImagePlugin
+2024-01-08 15:43:13,477 :: DEBUG :: 360 :: Importing FitsImagePlugin
+2024-01-08 15:43:13,477 :: DEBUG :: 360 :: Importing FliImagePlugin
+2024-01-08 15:43:13,477 :: DEBUG :: 360 :: Importing FpxImagePlugin
+2024-01-08 15:43:13,477 :: DEBUG :: 360 :: Importing FtexImagePlugin
+2024-01-08 15:43:13,478 :: DEBUG :: 360 :: Importing GbrImagePlugin
+2024-01-08 15:43:13,478 :: DEBUG :: 360 :: Importing GifImagePlugin
+2024-01-08 15:43:13,478 :: DEBUG :: 360 :: Importing GribStubImagePlugin
+2024-01-08 15:43:13,478 :: DEBUG :: 360 :: Importing Hdf5StubImagePlugin
+2024-01-08 15:43:13,478 :: DEBUG :: 360 :: Importing IcnsImagePlugin
+2024-01-08 15:43:13,479 :: DEBUG :: 360 :: Importing IcoImagePlugin
+2024-01-08 15:43:13,479 :: DEBUG :: 360 :: Importing ImImagePlugin
+2024-01-08 15:43:13,480 :: DEBUG :: 360 :: Importing ImtImagePlugin
+2024-01-08 15:43:13,480 :: DEBUG :: 360 :: Importing IptcImagePlugin
+2024-01-08 15:43:13,480 :: DEBUG :: 360 :: Importing JpegImagePlugin
+2024-01-08 15:43:13,480 :: DEBUG :: 360 :: Importing Jpeg2KImagePlugin
+2024-01-08 15:43:13,480 :: DEBUG :: 360 :: Importing McIdasImagePlugin
+2024-01-08 15:43:13,481 :: DEBUG :: 360 :: Importing MicImagePlugin
+2024-01-08 15:43:13,481 :: DEBUG :: 360 :: Importing MpegImagePlugin
+2024-01-08 15:43:13,481 :: DEBUG :: 360 :: Importing MpoImagePlugin
+2024-01-08 15:43:13,481 :: DEBUG :: 360 :: Importing MspImagePlugin
+2024-01-08 15:43:13,481 :: DEBUG :: 360 :: Importing PalmImagePlugin
+2024-01-08 15:43:13,482 :: DEBUG :: 360 :: Importing PcdImagePlugin
+2024-01-08 15:43:13,482 :: DEBUG :: 360 :: Importing PcxImagePlugin
+2024-01-08 15:43:13,482 :: DEBUG :: 360 :: Importing PdfImagePlugin
+2024-01-08 15:43:13,487 :: DEBUG :: 360 :: Importing PixarImagePlugin
+2024-01-08 15:43:13,487 :: DEBUG :: 360 :: Importing PngImagePlugin
+2024-01-08 15:43:13,487 :: DEBUG :: 360 :: Importing PpmImagePlugin
+2024-01-08 15:43:13,487 :: DEBUG :: 360 :: Importing PsdImagePlugin
+2024-01-08 15:43:13,487 :: DEBUG :: 360 :: Importing QoiImagePlugin
+2024-01-08 15:43:13,488 :: DEBUG :: 360 :: Importing SgiImagePlugin
+2024-01-08 15:43:13,488 :: DEBUG :: 360 :: Importing SpiderImagePlugin
+2024-01-08 15:43:13,488 :: DEBUG :: 360 :: Importing SunImagePlugin
+2024-01-08 15:43:13,488 :: DEBUG :: 360 :: Importing TgaImagePlugin
+2024-01-08 15:43:13,489 :: DEBUG :: 360 :: Importing TiffImagePlugin
+2024-01-08 15:43:13,489 :: DEBUG :: 360 :: Importing WebPImagePlugin
+2024-01-08 15:43:13,489 :: DEBUG :: 360 :: Importing WmfImagePlugin
+2024-01-08 15:43:13,490 :: DEBUG :: 360 :: Importing XbmImagePlugin
+2024-01-08 15:43:13,490 :: DEBUG :: 360 :: Importing XpmImagePlugin
+2024-01-08 15:43:13,491 :: DEBUG :: 360 :: Importing XVThumbImagePlugin
+2024-01-08 15:43:13,656 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [{'filename': 'BioRitmo--(7).jpg', 'file': <FileStorage: 'BioRitmo--(7).jpg' ('image/jpeg')>, 'types': None}] - ['BioRitmo--(7).webp']
+2024-01-08 15:43:24,187 :: INFO :: 178 :: Add array images [{'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}, {'filename': 'BioRitmo--(10).jpg', 'file': <FileStorage: 'BioRitmo--(10).jpg' ('image/jpeg')>, 'types': None}, {'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:43:24,187 :: INFO :: 179 :: For save complete [{'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}, {'filename': 'BioRitmo--(10).jpg', 'file': <FileStorage: 'BioRitmo--(10).jpg' ('image/jpeg')>, 'types': None}, {'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:43:26,561 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:43:26,562 :: INFO :: 212 :: Checa imagens [{'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}, {'filename': 'BioRitmo--(10).jpg', 'file': <FileStorage: 'BioRitmo--(10).jpg' ('image/jpeg')>, 'types': None}, {'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:43:26,577 :: DEBUG :: 360 :: Importing BlpImagePlugin
+2024-01-08 15:43:26,578 :: DEBUG :: 360 :: Importing BmpImagePlugin
+2024-01-08 15:43:26,578 :: DEBUG :: 360 :: Importing BufrStubImagePlugin
+2024-01-08 15:43:26,578 :: DEBUG :: 360 :: Importing CurImagePlugin
+2024-01-08 15:43:26,579 :: DEBUG :: 360 :: Importing DcxImagePlugin
+2024-01-08 15:43:26,579 :: DEBUG :: 360 :: Importing DdsImagePlugin
+2024-01-08 15:43:26,579 :: DEBUG :: 360 :: Importing EpsImagePlugin
+2024-01-08 15:43:26,580 :: DEBUG :: 360 :: Importing FitsImagePlugin
+2024-01-08 15:43:26,580 :: DEBUG :: 360 :: Importing FliImagePlugin
+2024-01-08 15:43:26,580 :: DEBUG :: 360 :: Importing FpxImagePlugin
+2024-01-08 15:43:26,580 :: DEBUG :: 360 :: Importing FtexImagePlugin
+2024-01-08 15:43:26,581 :: DEBUG :: 360 :: Importing GbrImagePlugin
+2024-01-08 15:43:26,581 :: DEBUG :: 360 :: Importing GifImagePlugin
+2024-01-08 15:43:26,581 :: DEBUG :: 360 :: Importing GribStubImagePlugin
+2024-01-08 15:43:26,581 :: DEBUG :: 360 :: Importing Hdf5StubImagePlugin
+2024-01-08 15:43:26,581 :: DEBUG :: 360 :: Importing IcnsImagePlugin
+2024-01-08 15:43:26,582 :: DEBUG :: 360 :: Importing IcoImagePlugin
+2024-01-08 15:43:26,582 :: DEBUG :: 360 :: Importing ImImagePlugin
+2024-01-08 15:43:26,582 :: DEBUG :: 360 :: Importing ImtImagePlugin
+2024-01-08 15:43:26,583 :: DEBUG :: 360 :: Importing IptcImagePlugin
+2024-01-08 15:43:26,583 :: DEBUG :: 360 :: Importing JpegImagePlugin
+2024-01-08 15:43:26,583 :: DEBUG :: 360 :: Importing Jpeg2KImagePlugin
+2024-01-08 15:43:26,583 :: DEBUG :: 360 :: Importing McIdasImagePlugin
+2024-01-08 15:43:26,583 :: DEBUG :: 360 :: Importing MicImagePlugin
+2024-01-08 15:43:26,583 :: DEBUG :: 360 :: Importing MpegImagePlugin
+2024-01-08 15:43:26,583 :: DEBUG :: 360 :: Importing MpoImagePlugin
+2024-01-08 15:43:26,584 :: DEBUG :: 360 :: Importing MspImagePlugin
+2024-01-08 15:43:26,584 :: DEBUG :: 360 :: Importing PalmImagePlugin
+2024-01-08 15:43:26,584 :: DEBUG :: 360 :: Importing PcdImagePlugin
+2024-01-08 15:43:26,584 :: DEBUG :: 360 :: Importing PcxImagePlugin
+2024-01-08 15:43:26,584 :: DEBUG :: 360 :: Importing PdfImagePlugin
+2024-01-08 15:43:26,588 :: DEBUG :: 360 :: Importing PixarImagePlugin
+2024-01-08 15:43:26,589 :: DEBUG :: 360 :: Importing PngImagePlugin
+2024-01-08 15:43:26,589 :: DEBUG :: 360 :: Importing PpmImagePlugin
+2024-01-08 15:43:26,589 :: DEBUG :: 360 :: Importing PsdImagePlugin
+2024-01-08 15:43:26,589 :: DEBUG :: 360 :: Importing QoiImagePlugin
+2024-01-08 15:43:26,589 :: DEBUG :: 360 :: Importing SgiImagePlugin
+2024-01-08 15:43:26,589 :: DEBUG :: 360 :: Importing SpiderImagePlugin
+2024-01-08 15:43:26,589 :: DEBUG :: 360 :: Importing SunImagePlugin
+2024-01-08 15:43:26,590 :: DEBUG :: 360 :: Importing TgaImagePlugin
+2024-01-08 15:43:26,590 :: DEBUG :: 360 :: Importing TiffImagePlugin
+2024-01-08 15:43:26,590 :: DEBUG :: 360 :: Importing WebPImagePlugin
+2024-01-08 15:43:26,590 :: DEBUG :: 360 :: Importing WmfImagePlugin
+2024-01-08 15:43:26,591 :: DEBUG :: 360 :: Importing XbmImagePlugin
+2024-01-08 15:43:26,591 :: DEBUG :: 360 :: Importing XpmImagePlugin
+2024-01-08 15:43:26,591 :: DEBUG :: 360 :: Importing XVThumbImagePlugin
+2024-01-08 15:43:26,969 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [{'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}, {'filename': 'BioRitmo--(10).jpg', 'file': <FileStorage: 'BioRitmo--(10).jpg' ('image/jpeg')>, 'types': None}, {'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}] - ['BioRitmo--(11).webp', 'BioRitmo--(10).webp', 'BioRitmo--(11).webp']
+2024-01-08 15:43:43,349 :: INFO :: 178 :: Add array images [{'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}, {'filename': 'BioRitmo--(10).jpg', 'file': <FileStorage: 'BioRitmo--(10).jpg' ('image/jpeg')>, 'types': None}, {'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}, {'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:43:43,349 :: INFO :: 179 :: For save complete [{'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}, {'filename': 'BioRitmo--(10).jpg', 'file': <FileStorage: 'BioRitmo--(10).jpg' ('image/jpeg')>, 'types': None}, {'filename': 'BioRitmo--(11).jpg', 'file': <FileStorage: 'BioRitmo--(11).jpg' ('image/jpeg')>, 'types': None}, {'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:43:50,121 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:43:50,121 :: INFO :: 212 :: Checa imagens []
+2024-01-08 15:43:50,121 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [] - []
+2024-01-08 15:44:03,555 :: INFO :: 178 :: Add array images [{'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': 'webp'}]
+2024-01-08 15:44:03,556 :: INFO :: 179 :: For save complete [{'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': 'webp'}]
+2024-01-08 15:44:06,841 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:44:06,841 :: INFO :: 212 :: Checa imagens [{'filename': 'BioRitmo--(7).jpg', 'file': <FileStorage: 'BioRitmo--(7).jpg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:44:06,999 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [{'filename': 'BioRitmo--(7).jpg', 'file': <FileStorage: 'BioRitmo--(7).jpg' ('image/jpeg')>, 'types': None}] - ['BioRitmo--(7).webp', 'BioRitmo--(7).webp']
+2024-01-08 15:51:44,930 :: INFO :: 29 ::  monitora array images []
+2024-01-08 15:51:46,409 :: INFO :: 29 ::  monitora array images []
+2024-01-08 15:51:51,479 :: INFO :: 178 :: Add array images [{'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:51:51,479 :: INFO :: 179 :: For save complete [{'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:51:57,030 :: INFO :: 211 :: Checa se pegou o ip 179.215.120.204 
+2024-01-08 15:51:57,030 :: INFO :: 212 :: Checa imagens []
+2024-01-08 15:51:57,031 :: INFO :: 222 :: Finaliza o convert e disponibiliza as imagens [] - []
+2024-01-08 15:52:01,948 :: INFO :: 178 :: Add array images [{'filename': '968a82af-cf77-4b62-b01f-2912c7ef0612.jpeg', 'file': <FileStorage: '968a82af-cf77-4b62-b01f-2912c7ef0612.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:52:01,948 :: INFO :: 179 :: For save complete [{'filename': '968a82af-cf77-4b62-b01f-2912c7ef0612.jpeg', 'file': <FileStorage: '968a82af-cf77-4b62-b01f-2912c7ef0612.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:52:08,642 :: INFO :: 178 :: Add array images [{'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:52:08,643 :: INFO :: 179 :: For save complete [{'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:52:11,903 :: INFO :: 211 :: Checa se pegou o ip None 
+2024-01-08 15:52:11,903 :: INFO :: 212 :: Checa imagens [{'filename': '926897f7-3969-4efe-a87b-433a2880531e.jpeg', 'file': <FileStorage: '926897f7-3969-4efe-a87b-433a2880531e.jpeg' ('image/jpeg')>, 'types': None}]
+2024-01-08 15:52:11,903 :: ERROR :: 825 :: Exception on /getFiles [GET]
+Traceback (most recent call last):
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib/python3.11/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib/python3.11/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib/python3.11/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib/python3.11/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "main.py", line 216, in getFiles
+    removeBg(image['file'], image['filename'], image['types'],ipRequest)
+  File "main.py", line 81, in removeBg
+    im = Image.open(f'images/{ip}/{filename}').convert('RGB')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib64/python3.11/site-packages/PIL/Image.py", line 3243, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'images/None/926897f7-3969-4efe-a87b-433a2880531e.jpeg'

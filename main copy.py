@@ -99,12 +99,7 @@ def convert(path, filename, types):
     print(filename.partition('.')[0])
     name = filename.partition('.')[0]
     ip = getIp()
-    # types_transform = f"{types}"
-    # print(types_transform)
-    # ********** TO DO ******** #
-    # ****TROCAR O TYPES ******
-    # path = f"{filename}.{types}"
-    # im.save(f'C:/Users/Fernanda/Documents/convertImage/images/{path}', 'webp', quality=55)
+    
     path=Path(f'static/images/{ip}').mkdir(parents=True, exist_ok=True)
     im.save(f"static/images/{ip}/{name}.{types}", f"{types}", quality=55)
     # im.save(f"static/{name}.{types}", f"{types}", quality=55)

@@ -211,5 +211,5 @@ label {
     justify-content: center;
    }
    #ip{
-    display: none;
+    /* display: none; */
    }

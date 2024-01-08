@@ -1,0 +1,45 @@
+CRITICAL:root:Teste
+ERROR:wsgi:Exception on /getFiles [GET]
+Traceback (most recent call last):
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib/python3.11/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib/python3.11/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib/python3.11/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib/python3.11/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "main.py", line 220, in getFiles
+    return render_template("index.html", images=images, status=0, ip=ipClient['ip'])
+                                                                     ~~~~~~~~^^^^^^
+KeyError: 'ip'
+CRITICAL:root:Teste
+CRITICAL:root:Teste
+ERROR:wsgi:Exception on /getFiles [GET]
+Traceback (most recent call last):
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib/python3.11/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib/python3.11/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib/python3.11/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/convertimageio/virtualenv/public_html/myapp/3.11/lib/python3.11/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "main.py", line 217, in getFiles
+    return render_template("index.html", images=images, status=0, ip=ipClient['ip'])
+                                                                     ~~~~~~~~^^^^^^
+KeyError: 'ip'

@@ -19,14 +19,17 @@ import time
 from datetime import datetime
 from tqdm import tqdm
 from time import sleep
-from localStoragePy import localStoragePy
+import logging
+logging.basicConfig(filename="minhaaplicacao.log", level=logging.DEBUG, format="%(asctime)s :: %(levelname)s :: %(lineno)d :: %(message)s")
 app = Flask(__name__)
 application = app
 app.config['SECRET_KEY']  = 'MINHA-PALAVRA-SECRETA'
 CORS(app)
 images = []
+logging.info(f" monitora array images {images}")
 images_download=[]
 ipClient = {ip: ''}
+import olefile
 
 
 
@@ -46,8 +49,9 @@ def hello():
     hostname = socket.gethostname()
 ## getting the IP address using socket.gethostbyname() method
     ip_address = socket.gethostbyname(hostname)
-    images.clear()
-    images_download.clear()
+    # images.clear()
+    # images_download.clear()
+    
    
    
     return render_template('index.html', images=images)
@@ -72,53 +76,45 @@ def print_hi():
         email='fernanda@poppt'
     )
 
-def removeBg(path, filename,types):
-    
-    im = Image.open(f'images/{getIp()}/{filename}').convert('RGB')
+def removeBg(path, filename,types, ip):
+ 
+    im = Image.open(f'images/{ip}/{filename}').convert('RGB')
     input_array = np.array(im)
     output_array = rembg.remove(input_array)
     output_image = Image.fromarray(output_array)
     #output_image.show()
     name = filename.split('.')[0]
     
-    path=Path(f'static/images/{getIp()}').mkdir(parents=True, exist_ok=True)
-    output_image.save(f"static/images/{getIp()}/{name}.png")
+    path=Path(f'static/images/{ip}').mkdir(parents=True, exist_ok=True)
+    output_image.save(f"static/images/{ip}/{name}.png")
     
     images_download.append(f"{name}.png")
    
-    return render_template("removeBackground.html", status=200, path=path, ip=getIp(), images_donwload=images_download)
+    return render_template("removeBackground.html", status=200, path=path, ip=ip, images_donwload=images_download)
 
 
-def convert(path, filename, types):
+def convert(path, filename, types, ip):
+   
     print("######################################################################")
     print(path)
-    im = Image.open(f"images/{getIp()}/{filename}").convert("RGB")
-    #bw = im.convert('L')
-    #bw.show()
-    #im1 = im.filter(ImageFilter.GaussianBlur)
-    #im1.show()
-    
+    im = Image.open(f"images/{ip}/{filename}").convert("RGB")
+
   
     
     if types == None:
         types = 'webp'
     print(filename.partition('.')[0])
     name = filename.partition('.')[0]
-    ip = getIp()
-    # types_transform = f"{types}"
-    # print(types_transform)
-    # ********** TO DO ******** #
-    # ****TROCAR O TYPES ******
-    # path = f"{filename}.{types}"
-    # im.save(f'C:/Users/Fernanda/Documents/convertImage/images/{path}', 'webp', quality=55)
+    logging.info(f"{types}")
+   
+   
     path=Path(f'static/images/{ip}').mkdir(parents=True, exist_ok=True)
     im.save(f"static/images/{ip}/{name}.{types}", f"{types}", quality=55)
-    # im.save(f"static/{name}.{types}", f"{types}", quality=55)
-    # return jsonify({'status': 200, 'path': path})
+  
     images_download.append(f"{name}.{types}")
    
    
-    #return render_template("index.html", status=200, ip='getIp()', images_donwload=images_download)
+   
 
 
 
@@ -129,25 +125,26 @@ def upload_file_removeBackground():
        
         types = request.form.get('types')
         files = request.files.getlist("file")
-       
+        ipForm = request.form.get('ip')
+        ipClient['ip'] = ipForm
+        ip = ipClient['ip']
        
         f = request.files['file']
 
-        saveFiles(files,types)
+        saveFiles(files,types,ip)
 
 
-        #f.save(f"images/{f.filename}")
-        #images.append({'filename': f.filename, 'file': f, 'types': types})
+        
         print(images)
 
         return render_template("removeBackground.html", images=images, up=True)
-        # return convert(request.files['file'], f.filename,types)
+        
 
 
 
 @app.route("/upload", methods=["POST", ])
 def upload_file():
-    #flash("Dados carregando")
+    images.clear()
     images_download.clear()
     if request.method == 'POST':
         
@@ -155,8 +152,8 @@ def upload_file():
         types = request.form.get('types')
         files = request.files.getlist("file")
         ipForm = request.form.get('ip')
-        ipClient['ip'] = ipForm
-        print("adadadasdasdas", ipClient)
+       
+       
         
        
         f = request.files['file']
@@ -167,22 +164,21 @@ def upload_file():
        
         
 
-        return render_template("index.html", images=images, up=True)
+    return render_template("index.html", images=images, up=True)
         
 
 
 
 def saveFiles(arrayFotos,types,ip):
-
+   
    
     path=Path(f'images/{ip}').mkdir(parents=True, exist_ok=True)
-    
-    
-   
-
     for foto in arrayFotos:
         foto.save(f"images/{ip}/{foto.filename}")     
         images.append({'filename': foto.filename, 'file': foto,'types': types})
+        logging.info(f"Add array images {images}")
+    logging.info(f"For save complete {images}")
+    
         
 
 
@@ -208,41 +204,27 @@ def change_types():
 
 
 @app.route("/getFiles", methods=["POST", "GET"])
-def getFiles():
-   
-    action = request.args.get('action')
+def getFiles():  
+    action = request.args.get('action') 
+    print(action)  
+    ipRequest = request.args.get('ip')
     
-    print("adadadasdasdas", ipClient)
-    print(len(images))
-
-  
+    logging.info(f"Checa se pegou o ip {ipRequest} ")
+    logging.info(f"Checa imagens {images}")
     for image in images:
-         #convert(image['file'], image['filename'],'webp')
-        #print(image['file'])
-        #print(image['filename'])
-         print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
-         
+                        
          if action=='remBG':
-           ip = getIp()
-           print(action)
-           removeBg(image['file'], image['filename'], image['types'])
-           #return render_template("removeBackground.html", images=images,  ip=ip, status=200, images_download=images_download)
-         else:
-          ip = getIp()
-          print("*******")           
-          convert(image['file'], image['filename'], image['types'])
-          #return render_template("index.html", images=images, status=200, ip=ip, images_download=images_download)
-        # convert(image,image.filename,'webp')
-        #pbar.set_description("Processing %s" % image)
-        #status = pbar.set_description("Processing %s" % image)
-        #print(status)
-
-    # return convert(request.files['file'], f.filename,types)
+            removeBg(image['file'], image['filename'], image['types'],ipRequest)
           
-    return render_template("index.html", images=images, status=200, ip=ipClient['ip'], images_download=images_download)
+         else:        
+            convert(image['file'], image['filename'], image['types'],ipRequest)
+
+   
+    logging.info(f"Finaliza o convert e disponibiliza as imagens {images} - {images_download}")
+    return render_template("index.html", images=images, status=200, ip=ipRequest, images_download=images_download)
 
 
-# Press the green button in the gutter to run the script.
+
 
 
 @app.route('/delete', methods=['GET'])
@@ -259,15 +241,12 @@ def delete_file():
           
             os.unlink(f"images/{getIp()}/{images[i]['filename']}")
             del images[i]
-    #item = request.args.get('item')
-    #images.remove(item)
-    # remove o arquivo no diretório
-    #os.unlink(item)
+   
 
     return render_template('index.html', images=images)
 
 def getTime():
-    ip = getIp()
+   
    
    
    
@@ -276,29 +255,23 @@ def getTime():
     res.clear()
     images_in.clear()
     for(dir_path, dir_names, file_names) in os.walk(f"images"):
-           #res.extend(dir_path)
-           print('aqui')
+         
+           
           
-           #print(dir_names)
-           #print(os.stat(f"static/images"))
-           #print(os.stat("/images/"))
-           #print(file_names)
+          
            now = datetime.now()
            limit = 60 * 60
            for(dir_path, dir_names, file_names) in os.walk("images"):
-              #print(file_names)
-              #print(dir_names)
-              print(os.stat(dir_path).st_mtime)
+             
+             
               stat_info = os.stat(dir_path).st_mtime
               creation_time = datetime.fromtimestamp(stat_info)
-              print(creation_time)
-              print(dir_path)
+             
               images_in.extend(file_names)
               dif = now - creation_time
-              print(dir_names)
-              print(dir_path)
-              #print(dif.seconds)
-              print(images_in)
+             
+          
+             
 
               for image in images_in:
                  
@@ -307,18 +280,13 @@ def getTime():
                   creation_time = datetime.fromtimestamp(stat_info)
                  
                   dif = now - creation_time
-                  print(dif.seconds)
-                  if dif.seconds > 100:
+               
+                  if dif.seconds > limit:
                       print('passou do tempo')
                       
                       print(dir_path)
                       print(f"\{dir_path}/{image}")
-                      #os.unlink(f"{dir_path}/{image}")
-                     #os.unlink(f"/images/179.215.120.204/Becksaerea0000.jpg")
                      
-                      
-                      #os.unlink("images/179.215.120.204/allanfachada.jpg")
-                      #os.unlink(f"images/179.215.120.204/968a82af-cf77-4b62-b01f-2912c7ef0612.jpeg")
     
     for(dir_path, dir_names, file_names) in os.walk("static/images"):
        
@@ -329,11 +297,9 @@ def getTime():
             stat_info = os.stat(dir_path).st_mtime
             creation_time =datetime.fromtimestamp(stat_info)
             dif = now -creation_time
-            print(dif.seconds)
+         
             if dif.seconds >100:
-                print('passou  tempo do static')
-                print(dir_path)
-                print(f"{dir_path}/{re}")
+              
                 os.unlink(f"{dir_path}/{re}")
 
       
@@ -341,9 +307,9 @@ def getTime():
 
 
 if __name__ == '__main__':
-    getTime()
-    #getIp()   
-    app.run(debug=True)
+    # getTime()
+   
+    app.run(threaded=True, debug=True)
    
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+

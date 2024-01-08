@@ -47,7 +47,7 @@
        <div class="item">
         <div id="content_list_images">
               <div  id="name_image" >{{image['filename']}}</div>
-            <select name="types" id="select" onchange="selectType(this)" >
+            <select class="select-type" name="types" id="select"  >
             <option value="avif">avif</option>
 
             <option value="webp" selected>webp</option>
@@ -78,7 +78,8 @@
 
         {% if status !=200 and up==True%}
          <div id="btn_convert">
-            <a id="a_convert" href="/getFiles?action=convert">Converter Imagens</a>
+           <a id="a_convert" href="">Converter Imagens</a> 
+        <!--  <a id="a_convert" href="/getFiles?action=convert">Converter Imagens</a>  -->
         </div>
         
         {% endif %}

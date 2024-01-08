@@ -52,7 +52,3 @@ urllib3==2.1.0
 watermark-remover-cli==0.0.1
 Werkzeug==3.0.1
 wsproto==1.2.0
-WhatIsMyIP==2022.7.10
-whatismyip==2022.7.10
-wsproto==1.2.0
-olefile==0.47
